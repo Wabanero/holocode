@@ -1,0 +1,16 @@
+{
+  "name": "holocode-demo-repo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "echo \"demo tests placeholder\"",
+    "lint": "echo \"demo lint placeholder\""
+  },
+  "dependencies": {
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}

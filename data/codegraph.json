@@ -1,0 +1,2962 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-15T22:10:36.976Z",
+  "root": "demo-repo",
+  "repoPath": "C:\\Users\\User\\Documents\\BioinfoAR\\demo-repo",
+  "provider": {
+    "type": "internal",
+    "parser": "minimal-js-ts",
+    "note": "Tree-sitter is not required in this build; JS/TS parsing uses lightweight regex heuristics."
+  },
+  "tree": [
+    {
+      "name": "package.json",
+      "path": "package.json",
+      "kind": "file",
+      "extension": ".json"
+    },
+    {
+      "name": "src",
+      "path": "src",
+      "kind": "folder",
+      "children": [
+        {
+          "name": "agents",
+          "path": "src/agents",
+          "kind": "folder",
+          "children": [
+            {
+              "name": "AgentTaskBuilder.ts",
+              "path": "src/agents/AgentTaskBuilder.ts",
+              "kind": "file",
+              "extension": ".ts"
+            },
+            {
+              "name": "VoiceCommandRouter.ts",
+              "path": "src/agents/VoiceCommandRouter.ts",
+              "kind": "file",
+              "extension": ".ts"
+            }
+          ]
+        },
+        {
+          "name": "App.tsx",
+          "path": "src/App.tsx",
+          "kind": "file",
+          "extension": ".tsx"
+        },
+        {
+          "name": "SceneManager.ts",
+          "path": "src/SceneManager.ts",
+          "kind": "file",
+          "extension": ".ts"
+        },
+        {
+          "name": "utils",
+          "path": "src/utils",
+          "kind": "folder",
+          "children": [
+            {
+              "name": "codeGraph.ts",
+              "path": "src/utils/codeGraph.ts",
+              "kind": "file",
+              "extension": ".ts"
+            }
+          ]
+        },
+        {
+          "name": "xr",
+          "path": "src/xr",
+          "kind": "folder",
+          "children": [
+            {
+              "name": "HandTrackingSystem.ts",
+              "path": "src/xr/HandTrackingSystem.ts",
+              "kind": "file",
+              "extension": ".ts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tests",
+      "path": "tests",
+      "kind": "folder",
+      "children": [
+        {
+          "name": "SceneManager.test.ts",
+          "path": "tests/SceneManager.test.ts",
+          "kind": "file",
+          "extension": ".ts"
+        },
+        {
+          "name": "VoiceCommandRouter.test.ts",
+          "path": "tests/VoiceCommandRouter.test.ts",
+          "kind": "file",
+          "extension": ".ts"
+        }
+      ]
+    },
+    {
+      "name": "tsconfig.json",
+      "path": "tsconfig.json",
+      "kind": "file",
+      "extension": ".json"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "repository:demo-repo",
+      "name": "demo-repo",
+      "label": "demo-repo",
+      "path": ".",
+      "kind": "repository",
+      "type": "repository",
+      "metrics": {}
+    },
+    {
+      "id": "file:package.json",
+      "name": "package.json",
+      "label": "package.json",
+      "path": "package.json",
+      "kind": "file",
+      "type": "file",
+      "language": "json",
+      "status": "unchanged",
+      "metrics": {
+        "loc": null,
+        "imports": 0,
+        "dependents": 0,
+        "changedLines": 0,
+        "errorCount": 0,
+        "testCoverageRelation": null,
+        "agentAttentionScore": 0
+      }
+    },
+    {
+      "id": "directory:src",
+      "name": "src",
+      "label": "src",
+      "path": "src",
+      "kind": "directory",
+      "type": "directory",
+      "metrics": {}
+    },
+    {
+      "id": "directory:src/agents",
+      "name": "agents",
+      "label": "agents",
+      "path": "src/agents",
+      "kind": "directory",
+      "type": "directory",
+      "metrics": {}
+    },
+    {
+      "id": "file:src/agents/AgentTaskBuilder.ts",
+      "name": "AgentTaskBuilder.ts",
+      "label": "AgentTaskBuilder.ts",
+      "path": "src/agents/AgentTaskBuilder.ts",
+      "kind": "file",
+      "type": "file",
+      "language": "typescript",
+      "status": "unchanged",
+      "metrics": {
+        "loc": 33,
+        "imports": 0,
+        "dependents": 1,
+        "changedLines": 0,
+        "errorCount": 0,
+        "testCoverageRelation": "none_detected",
+        "agentAttentionScore": 0
+      },
+      "loc": 33,
+      "imports": [],
+      "importedBy": [
+        "src/App.tsx"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "file:src/agents/VoiceCommandRouter.ts",
+      "name": "VoiceCommandRouter.ts",
+      "label": "VoiceCommandRouter.ts",
+      "path": "src/agents/VoiceCommandRouter.ts",
+      "kind": "file",
+      "type": "file",
+      "language": "typescript",
+      "status": "unchanged",
+      "metrics": {
+        "loc": 41,
+        "imports": 1,
+        "dependents": 2,
+        "changedLines": 0,
+        "errorCount": 0,
+        "testCoverageRelation": "has_related_tests",
+        "agentAttentionScore": 0
+      },
+      "loc": 41,
+      "imports": [
+        "src/App.tsx"
+      ],
+      "importedBy": [
+        "src/App.tsx",
+        "tests/VoiceCommandRouter.test.ts"
+      ],
+      "relatedTests": [
+        "tests/VoiceCommandRouter.test.ts"
+      ]
+    },
+    {
+      "id": "file:src/App.tsx",
+      "name": "App.tsx",
+      "label": "App.tsx",
+      "path": "src/App.tsx",
+      "kind": "file",
+      "type": "file",
+      "language": "tsx",
+      "status": "unchanged",
+      "metrics": {
+        "loc": 37,
+        "imports": 5,
+        "dependents": 1,
+        "changedLines": 0,
+        "errorCount": 0,
+        "testCoverageRelation": "none_detected",
+        "agentAttentionScore": 0
+      },
+      "loc": 37,
+      "imports": [
+        "react",
+        "src/SceneManager.ts",
+        "src/agents/VoiceCommandRouter.ts",
+        "src/agents/AgentTaskBuilder.ts",
+        "src/utils/codeGraph.ts"
+      ],
+      "importedBy": [
+        "src/agents/VoiceCommandRouter.ts"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "file:src/SceneManager.ts",
+      "name": "SceneManager.ts",
+      "label": "SceneManager.ts",
+      "path": "src/SceneManager.ts",
+      "kind": "file",
+      "type": "file",
+      "language": "typescript",
+      "status": "unchanged",
+      "metrics": {
+        "loc": 51,
+        "imports": 2,
+        "dependents": 2,
+        "changedLines": 0,
+        "errorCount": 0,
+        "testCoverageRelation": "has_related_tests",
+        "agentAttentionScore": 0
+      },
+      "loc": 51,
+      "imports": [
+        "src/xr/HandTrackingSystem.ts",
+        "src/utils/codeGraph.ts"
+      ],
+      "importedBy": [
+        "src/App.tsx",
+        "tests/SceneManager.test.ts"
+      ],
+      "relatedTests": [
+        "tests/SceneManager.test.ts"
+      ]
+    },
+    {
+      "id": "directory:src/utils",
+      "name": "utils",
+      "label": "utils",
+      "path": "src/utils",
+      "kind": "directory",
+      "type": "directory",
+      "metrics": {}
+    },
+    {
+      "id": "file:src/utils/codeGraph.ts",
+      "name": "codeGraph.ts",
+      "label": "codeGraph.ts",
+      "path": "src/utils/codeGraph.ts",
+      "kind": "file",
+      "type": "file",
+      "language": "typescript",
+      "status": "unchanged",
+      "metrics": {
+        "loc": 24,
+        "imports": 0,
+        "dependents": 2,
+        "changedLines": 0,
+        "errorCount": 0,
+        "testCoverageRelation": "none_detected",
+        "agentAttentionScore": 0
+      },
+      "loc": 24,
+      "imports": [],
+      "importedBy": [
+        "src/App.tsx",
+        "src/SceneManager.ts"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "directory:src/xr",
+      "name": "xr",
+      "label": "xr",
+      "path": "src/xr",
+      "kind": "directory",
+      "type": "directory",
+      "metrics": {}
+    },
+    {
+      "id": "file:src/xr/HandTrackingSystem.ts",
+      "name": "HandTrackingSystem.ts",
+      "label": "HandTrackingSystem.ts",
+      "path": "src/xr/HandTrackingSystem.ts",
+      "kind": "file",
+      "type": "file",
+      "language": "typescript",
+      "status": "unchanged",
+      "metrics": {
+        "loc": 47,
+        "imports": 0,
+        "dependents": 1,
+        "changedLines": 0,
+        "errorCount": 0,
+        "testCoverageRelation": "none_detected",
+        "agentAttentionScore": 0
+      },
+      "loc": 47,
+      "imports": [],
+      "importedBy": [
+        "src/SceneManager.ts"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "directory:tests",
+      "name": "tests",
+      "label": "tests",
+      "path": "tests",
+      "kind": "directory",
+      "type": "directory",
+      "metrics": {}
+    },
+    {
+      "id": "file:tests/SceneManager.test.ts",
+      "name": "SceneManager.test.ts",
+      "label": "SceneManager.test.ts",
+      "path": "tests/SceneManager.test.ts",
+      "kind": "file",
+      "type": "test",
+      "language": "typescript",
+      "status": "unchanged",
+      "metrics": {
+        "loc": 6,
+        "imports": 1,
+        "dependents": 0,
+        "changedLines": 0,
+        "errorCount": 0,
+        "testCoverageRelation": "test_file",
+        "agentAttentionScore": 0
+      },
+      "loc": 6,
+      "imports": [
+        "src/SceneManager.ts"
+      ],
+      "importedBy": [],
+      "relatedTests": []
+    },
+    {
+      "id": "file:tests/VoiceCommandRouter.test.ts",
+      "name": "VoiceCommandRouter.test.ts",
+      "label": "VoiceCommandRouter.test.ts",
+      "path": "tests/VoiceCommandRouter.test.ts",
+      "kind": "file",
+      "type": "test",
+      "language": "typescript",
+      "status": "unchanged",
+      "metrics": {
+        "loc": 5,
+        "imports": 1,
+        "dependents": 0,
+        "changedLines": 0,
+        "errorCount": 0,
+        "testCoverageRelation": "test_file",
+        "agentAttentionScore": 0
+      },
+      "loc": 5,
+      "imports": [
+        "src/agents/VoiceCommandRouter.ts"
+      ],
+      "importedBy": [],
+      "relatedTests": []
+    },
+    {
+      "id": "file:tsconfig.json",
+      "name": "tsconfig.json",
+      "label": "tsconfig.json",
+      "path": "tsconfig.json",
+      "kind": "file",
+      "type": "file",
+      "language": "json",
+      "status": "unchanged",
+      "metrics": {
+        "loc": null,
+        "imports": 0,
+        "dependents": 0,
+        "changedLines": 0,
+        "errorCount": 0,
+        "testCoverageRelation": null,
+        "agentAttentionScore": 0
+      }
+    },
+    {
+      "id": "module:src/agents/AgentTaskBuilder.ts",
+      "name": "AgentTaskBuilder.ts",
+      "label": "AgentTaskBuilder.ts",
+      "path": "src/agents/AgentTaskBuilder.ts",
+      "kind": "module",
+      "type": "module",
+      "metrics": {
+        "loc": 33,
+        "imports": 0
+      }
+    },
+    {
+      "id": "symbol:src/agents/AgentTaskBuilder.ts#AgentTaskInput",
+      "name": "AgentTaskInput",
+      "path": "src/agents/AgentTaskBuilder.ts",
+      "kind": "interface",
+      "type": "interface",
+      "line": 1,
+      "endLine": 6,
+      "size": 7,
+      "metrics": {
+        "loc": 6,
+        "complexity": 1
+      },
+      "complexity": 1,
+      "calls": [],
+      "extendsName": null,
+      "implementsNames": []
+    },
+    {
+      "id": "symbol:src/agents/AgentTaskBuilder.ts#buildAgentTask",
+      "name": "buildAgentTask",
+      "path": "src/agents/AgentTaskBuilder.ts",
+      "kind": "function",
+      "type": "function",
+      "line": 7,
+      "endLine": 27,
+      "size": 22,
+      "metrics": {
+        "loc": 20,
+        "complexity": 1
+      },
+      "complexity": 1,
+      "calls": [
+        "map",
+        "join"
+      ],
+      "extendsName": null,
+      "implementsNames": []
+    },
+    {
+      "id": "symbol:src/agents/AgentTaskBuilder.ts#summarizeSelection",
+      "name": "summarizeSelection",
+      "path": "src/agents/AgentTaskBuilder.ts",
+      "kind": "function",
+      "type": "function",
+      "line": 28,
+      "endLine": 36,
+      "size": 9,
+      "metrics": {
+        "loc": 7,
+        "complexity": 1
+      },
+      "complexity": 1,
+      "calls": [],
+      "extendsName": null,
+      "implementsNames": []
+    },
+    {
+      "id": "export:src/agents/AgentTaskBuilder.ts:1:AgentTaskInput",
+      "name": "AgentTaskInput",
+      "label": "AgentTaskInput",
+      "path": "src/agents/AgentTaskBuilder.ts",
+      "kind": "export",
+      "type": "export",
+      "line": 1,
+      "metrics": {}
+    },
+    {
+      "id": "export:src/agents/AgentTaskBuilder.ts:8:buildAgentTask",
+      "name": "buildAgentTask",
+      "label": "buildAgentTask",
+      "path": "src/agents/AgentTaskBuilder.ts",
+      "kind": "export",
+      "type": "export",
+      "line": 8,
+      "metrics": {}
+    },
+    {
+      "id": "export:src/agents/AgentTaskBuilder.ts:29:summarizeSelection",
+      "name": "summarizeSelection",
+      "label": "summarizeSelection",
+      "path": "src/agents/AgentTaskBuilder.ts",
+      "kind": "export",
+      "type": "export",
+      "line": 29,
+      "metrics": {}
+    },
+    {
+      "id": "module:src/agents/VoiceCommandRouter.ts",
+      "name": "VoiceCommandRouter.ts",
+      "label": "VoiceCommandRouter.ts",
+      "path": "src/agents/VoiceCommandRouter.ts",
+      "kind": "module",
+      "type": "module",
+      "metrics": {
+        "loc": 41,
+        "imports": 1
+      }
+    },
+    {
+      "id": "symbol:src/agents/VoiceCommandRouter.ts#VoiceIntent",
+      "name": "VoiceIntent",
+      "path": "src/agents/VoiceCommandRouter.ts",
+      "kind": "type",
+      "type": "type",
+      "line": 2,
+      "endLine": 8,
+      "size": 8,
+      "metrics": {
+        "loc": 6,
+        "complexity": 1
+      },
+      "complexity": 1,
+      "calls": [],
+      "extendsName": null,
+      "implementsNames": []
+    },
+    {
+      "id": "symbol:src/agents/VoiceCommandRouter.ts#VoiceRouter",
+      "name": "VoiceRouter",
+      "path": "src/agents/VoiceCommandRouter.ts",
+      "kind": "interface",
+      "type": "interface",
+      "line": 9,
+      "endLine": 12,
+      "size": 5,
+      "metrics": {
+        "loc": 3,
+        "complexity": 1
+      },
+      "complexity": 1,
+      "calls": [
+        "route"
+      ],
+      "extendsName": null,
+      "implementsNames": []
+    },
+    {
+      "id": "symbol:src/agents/VoiceCommandRouter.ts#normalizeTranscript",
+      "name": "normalizeTranscript",
+      "path": "src/agents/VoiceCommandRouter.ts",
+      "kind": "function",
+      "type": "function",
+      "line": 13,
+      "endLine": 16,
+      "size": 5,
+      "metrics": {
+        "loc": 3,
+        "complexity": 1
+      },
+      "complexity": 1,
+      "calls": [
+        "trim",
+        "toLowerCase",
+        "replace"
+      ],
+      "extendsName": null,
+      "implementsNames": []
+    },
+    {
+      "id": "symbol:src/agents/VoiceCommandRouter.ts#parseVoiceCommand",
+      "name": "parseVoiceCommand",
+      "path": "src/agents/VoiceCommandRouter.ts",
+      "kind": "function",
+      "type": "function",
+      "line": 17,
+      "endLine": 38,
+      "size": 23,
+      "metrics": {
+        "loc": 16,
+        "complexity": 5
+      },
+      "complexity": 5,
+      "calls": [
+        "normalizeTranscript",
+        "startsWith",
+        "replace",
+        "includes"
+      ],
+      "extendsName": null,
+      "implementsNames": []
+    },
+    {
+      "id": "symbol:src/agents/VoiceCommandRouter.ts#createDefaultVoiceRouter",
+      "name": "createDefaultVoiceRouter",
+      "path": "src/agents/VoiceCommandRouter.ts",
+      "kind": "function",
+      "type": "function",
+      "line": 39,
+      "endLine": 53,
+      "size": 15,
+      "metrics": {
+        "loc": 12,
+        "complexity": 3
+      },
+      "complexity": 3,
+      "calls": [
+        "route",
+        "setMode"
+      ],
+      "extendsName": null,
+      "implementsNames": []
+    },
+    {
+      "id": "import:src/agents/VoiceCommandRouter.ts:1:../App",
+      "name": "../App",
+      "label": "../App",
+      "path": "src/agents/VoiceCommandRouter.ts",
+      "kind": "import",
+      "type": "import",
+      "line": 1,
+      "importedNames": [
+        "CockpitMode"
+      ],
+      "metrics": {}
+    },
+    {
+      "id": "export:src/agents/VoiceCommandRouter.ts:3:VoiceIntent",
+      "name": "VoiceIntent",
+      "label": "VoiceIntent",
+      "path": "src/agents/VoiceCommandRouter.ts",
+      "kind": "export",
+      "type": "export",
+      "line": 3,
+      "metrics": {}
+    },
+    {
+      "id": "export:src/agents/VoiceCommandRouter.ts:10:VoiceRouter",
+      "name": "VoiceRouter",
+      "label": "VoiceRouter",
+      "path": "src/agents/VoiceCommandRouter.ts",
+      "kind": "export",
+      "type": "export",
+      "line": 10,
+      "metrics": {}
+    },
+    {
+      "id": "export:src/agents/VoiceCommandRouter.ts:14:normalizeTranscript",
+      "name": "normalizeTranscript",
+      "label": "normalizeTranscript",
+      "path": "src/agents/VoiceCommandRouter.ts",
+      "kind": "export",
+      "type": "export",
+      "line": 14,
+      "metrics": {}
+    },
+    {
+      "id": "export:src/agents/VoiceCommandRouter.ts:18:parseVoiceCommand",
+      "name": "parseVoiceCommand",
+      "label": "parseVoiceCommand",
+      "path": "src/agents/VoiceCommandRouter.ts",
+      "kind": "export",
+      "type": "export",
+      "line": 18,
+      "metrics": {}
+    },
+    {
+      "id": "export:src/agents/VoiceCommandRouter.ts:40:createDefaultVoiceRouter",
+      "name": "createDefaultVoiceRouter",
+      "label": "createDefaultVoiceRouter",
+      "path": "src/agents/VoiceCommandRouter.ts",
+      "kind": "export",
+      "type": "export",
+      "line": 40,
+      "metrics": {}
+    },
+    {
+      "id": "module:src/App.tsx",
+      "name": "App.tsx",
+      "label": "App.tsx",
+      "path": "src/App.tsx",
+      "kind": "module",
+      "type": "module",
+      "metrics": {
+        "loc": 37,
+        "imports": 5
+      }
+    },
+    {
+      "id": "symbol:src/App.tsx#CockpitMode",
+      "name": "CockpitMode",
+      "path": "src/App.tsx",
+      "kind": "type",
+      "type": "type",
+      "line": 6,
+      "endLine": 7,
+      "size": 3,
+      "metrics": {
+        "loc": 1,
+        "complexity": 1
+      },
+      "complexity": 1,
+      "calls": [],
+      "extendsName": null,
+      "implementsNames": []
+    },
+    {
+      "id": "symbol:src/App.tsx#App",
+      "name": "App",
+      "path": "src/App.tsx",
+      "kind": "function",
+      "type": "function",
+      "line": 8,
+      "endLine": 13,
+      "size": 7,
+      "metrics": {
+        "loc": 5,
+        "complexity": 1
+      },
+      "complexity": 1,
+      "calls": [
+        "useMemo",
+        "createSceneConfig",
+        "SceneManager",
+        "createDefaultVoiceRouter"
+      ],
+      "extendsName": null,
+      "implementsNames": []
+    },
+    {
+      "id": "symbol:src/App.tsx#initializeCockpit",
+      "name": "initializeCockpit",
+      "path": "src/App.tsx",
+      "kind": "function",
+      "type": "function",
+      "line": 14,
+      "endLine": 20,
+      "size": 8,
+      "metrics": {
+        "loc": 6,
+        "complexity": 1
+      },
+      "complexity": 1,
+      "calls": [
+        "initializeScene",
+        "parseVoiceCommand",
+        "route",
+        "buildCodeGraph"
+      ],
+      "extendsName": null,
+      "implementsNames": []
+    },
+    {
+      "id": "symbol:src/App.tsx#createRefactorTask",
+      "name": "createRefactorTask",
+      "path": "src/App.tsx",
+      "kind": "function",
+      "type": "function",
+      "line": 21,
+      "endLine": 45,
+      "size": 25,
+      "metrics": {
+        "loc": 20,
+        "complexity": 1
+      },
+      "complexity": 1,
+      "calls": [
+        "buildAgentTask",
+        "initializeCockpit",
+        "stringify"
+      ],
+      "extendsName": null,
+      "implementsNames": []
+    },
+    {
+      "id": "import:src/App.tsx:1:react",
+      "name": "react",
+      "label": "react",
+      "path": "src/App.tsx",
+      "kind": "import",
+      "type": "import",
+      "line": 1,
+      "importedNames": [
+        "React",
+        "useMemo",
+        "useState"
+      ],
+      "metrics": {}
+    },
+    {
+      "id": "package:react",
+      "name": "react",
+      "label": "react",
+      "path": "react",
+      "kind": "package",
+      "type": "package",
+      "metrics": {}
+    },
+    {
+      "id": "import:src/App.tsx:2:./SceneManager",
+      "name": "./SceneManager",
+      "label": "./SceneManager",
+      "path": "src/App.tsx",
+      "kind": "import",
+      "type": "import",
+      "line": 2,
+      "importedNames": [
+        "SceneManager",
+        "createSceneConfig"
+      ],
+      "metrics": {}
+    },
+    {
+      "id": "import:src/App.tsx:3:./agents/VoiceCommandRouter",
+      "name": "./agents/VoiceCommandRouter",
+      "label": "./agents/VoiceCommandRouter",
+      "path": "src/App.tsx",
+      "kind": "import",
+      "type": "import",
+      "line": 3,
+      "importedNames": [
+        "createDefaultVoiceRouter",
+        "parseVoiceCommand"
+      ],
+      "metrics": {}
+    },
+    {
+      "id": "import:src/App.tsx:4:./agents/AgentTaskBuilder",
+      "name": "./agents/AgentTaskBuilder",
+      "label": "./agents/AgentTaskBuilder",
+      "path": "src/App.tsx",
+      "kind": "import",
+      "type": "import",
+      "line": 4,
+      "importedNames": [
+        "buildAgentTask"
+      ],
+      "metrics": {}
+    },
+    {
+      "id": "import:src/App.tsx:5:./utils/codeGraph",
+      "name": "./utils/codeGraph",
+      "label": "./utils/codeGraph",
+      "path": "src/App.tsx",
+      "kind": "import",
+      "type": "import",
+      "line": 5,
+      "importedNames": [
+        "buildCodeGraph"
+      ],
+      "metrics": {}
+    },
+    {
+      "id": "export:src/App.tsx:7:CockpitMode",
+      "name": "CockpitMode",
+      "label": "CockpitMode",
+      "path": "src/App.tsx",
+      "kind": "export",
+      "type": "export",
+      "line": 7,
+      "metrics": {}
+    },
+    {
+      "id": "export:src/App.tsx:9:App",
+      "name": "App",
+      "label": "App",
+      "path": "src/App.tsx",
+      "kind": "export",
+      "type": "export",
+      "line": 9,
+      "metrics": {}
+    },
+    {
+      "id": "module:src/SceneManager.ts",
+      "name": "SceneManager.ts",
+      "label": "SceneManager.ts",
+      "path": "src/SceneManager.ts",
+      "kind": "module",
+      "type": "module",
+      "metrics": {
+        "loc": 51,
+        "imports": 2
+      }
+    },
+    {
+      "id": "symbol:src/SceneManager.ts#SceneConfig",
+      "name": "SceneConfig",
+      "path": "src/SceneManager.ts",
+      "kind": "interface",
+      "type": "interface",
+      "line": 3,
+      "endLine": 9,
+      "size": 8,
+      "metrics": {
+        "loc": 6,
+        "complexity": 1
+      },
+      "complexity": 1,
+      "calls": [],
+      "extendsName": null,
+      "implementsNames": []
+    },
+    {
+      "id": "symbol:src/SceneManager.ts#createSceneConfig",
+      "name": "createSceneConfig",
+      "path": "src/SceneManager.ts",
+      "kind": "function",
+      "type": "function",
+      "line": 10,
+      "endLine": 18,
+      "size": 10,
+      "metrics": {
+        "loc": 8,
+        "complexity": 1
+      },
+      "complexity": 1,
+      "calls": [],
+      "extendsName": null,
+      "implementsNames": []
+    },
+    {
+      "id": "symbol:src/SceneManager.ts#SceneManager",
+      "name": "SceneManager",
+      "path": "src/SceneManager.ts",
+      "kind": "class",
+      "type": "class",
+      "line": 19,
+      "endLine": 62,
+      "size": 44,
+      "metrics": {
+        "loc": 35,
+        "complexity": 2
+      },
+      "complexity": 2,
+      "calls": [
+        "constructor",
+        "initializeScene",
+        "initRenderer",
+        "loadAssets",
+        "buildCodeGraph",
+        "setupHandTracking",
+        "createHandTrackingSystem",
+        "start"
+      ],
+      "extendsName": null,
+      "implementsNames": []
+    },
+    {
+      "id": "symbol:src/SceneManager.ts#SceneManager.initializeScene",
+      "name": "initializeScene",
+      "symbolName": "SceneManager.initializeScene",
+      "path": "src/SceneManager.ts",
+      "kind": "method",
+      "type": "method",
+      "line": 24,
+      "endLine": 24,
+      "size": 1,
+      "metrics": {
+        "loc": 1,
+        "complexity": 1
+      },
+      "complexity": 1,
+      "calls": [],
+      "parentSymbolId": "symbol:src/SceneManager.ts#SceneManager"
+    },
+    {
+      "id": "symbol:src/SceneManager.ts#SceneManager.if",
+      "name": "if",
+      "symbolName": "SceneManager.if",
+      "path": "src/SceneManager.ts",
+      "kind": "method",
+      "type": "method",
+      "line": 29,
+      "endLine": 29,
+      "size": 1,
+      "metrics": {
+        "loc": 1,
+        "complexity": 1
+      },
+      "complexity": 1,
+      "calls": [],
+      "parentSymbolId": "symbol:src/SceneManager.ts#SceneManager"
+    },
+    {
+      "id": "symbol:src/SceneManager.ts#SceneManager.initRenderer",
+      "name": "initRenderer",
+      "symbolName": "SceneManager.initRenderer",
+      "path": "src/SceneManager.ts",
+      "kind": "method",
+      "type": "method",
+      "line": 41,
+      "endLine": 41,
+      "size": 1,
+      "metrics": {
+        "loc": 1,
+        "complexity": 1
+      },
+      "complexity": 1,
+      "calls": [],
+      "parentSymbolId": "symbol:src/SceneManager.ts#SceneManager"
+    },
+    {
+      "id": "symbol:src/SceneManager.ts#SceneManager.loadAssets",
+      "name": "loadAssets",
+      "symbolName": "SceneManager.loadAssets",
+      "path": "src/SceneManager.ts",
+      "kind": "method",
+      "type": "method",
+      "line": 49,
+      "endLine": 49,
+      "size": 1,
+      "metrics": {
+        "loc": 1,
+        "complexity": 1
+      },
+      "complexity": 1,
+      "calls": [],
+      "parentSymbolId": "symbol:src/SceneManager.ts#SceneManager"
+    },
+    {
+      "id": "symbol:src/SceneManager.ts#SceneManager.setupHandTracking",
+      "name": "setupHandTracking",
+      "symbolName": "SceneManager.setupHandTracking",
+      "path": "src/SceneManager.ts",
+      "kind": "method",
+      "type": "method",
+      "line": 53,
+      "endLine": 53,
+      "size": 1,
+      "metrics": {
+        "loc": 1,
+        "complexity": 1
+      },
+      "complexity": 1,
+      "calls": [],
+      "parentSymbolId": "symbol:src/SceneManager.ts#SceneManager"
+    },
+    {
+      "id": "import:src/SceneManager.ts:1:./xr/HandTrackingSystem",
+      "name": "./xr/HandTrackingSystem",
+      "label": "./xr/HandTrackingSystem",
+      "path": "src/SceneManager.ts",
+      "kind": "import",
+      "type": "import",
+      "line": 1,
+      "importedNames": [
+        "HandTrackingSystem",
+        "createHandTrackingSystem"
+      ],
+      "metrics": {}
+    },
+    {
+      "id": "import:src/SceneManager.ts:2:./utils/codeGraph",
+      "name": "./utils/codeGraph",
+      "label": "./utils/codeGraph",
+      "path": "src/SceneManager.ts",
+      "kind": "import",
+      "type": "import",
+      "line": 2,
+      "importedNames": [
+        "buildCodeGraph"
+      ],
+      "metrics": {}
+    },
+    {
+      "id": "export:src/SceneManager.ts:4:SceneConfig",
+      "name": "SceneConfig",
+      "label": "SceneConfig",
+      "path": "src/SceneManager.ts",
+      "kind": "export",
+      "type": "export",
+      "line": 4,
+      "metrics": {}
+    },
+    {
+      "id": "export:src/SceneManager.ts:11:createSceneConfig",
+      "name": "createSceneConfig",
+      "label": "createSceneConfig",
+      "path": "src/SceneManager.ts",
+      "kind": "export",
+      "type": "export",
+      "line": 11,
+      "metrics": {}
+    },
+    {
+      "id": "export:src/SceneManager.ts:20:SceneManager",
+      "name": "SceneManager",
+      "label": "SceneManager",
+      "path": "src/SceneManager.ts",
+      "kind": "export",
+      "type": "export",
+      "line": 20,
+      "metrics": {}
+    },
+    {
+      "id": "module:src/utils/codeGraph.ts",
+      "name": "codeGraph.ts",
+      "label": "codeGraph.ts",
+      "path": "src/utils/codeGraph.ts",
+      "kind": "module",
+      "type": "module",
+      "metrics": {
+        "loc": 24,
+        "imports": 0
+      }
+    },
+    {
+      "id": "symbol:src/utils/codeGraph.ts#CodeGraphSummary",
+      "name": "CodeGraphSummary",
+      "path": "src/utils/codeGraph.ts",
+      "kind": "interface",
+      "type": "interface",
+      "line": 1,
+      "endLine": 5,
+      "size": 6,
+      "metrics": {
+        "loc": 5,
+        "complexity": 1
+      },
+      "complexity": 1,
+      "calls": [],
+      "extendsName": null,
+      "implementsNames": []
+    },
+    {
+      "id": "symbol:src/utils/codeGraph.ts#buildCodeGraph",
+      "name": "buildCodeGraph",
+      "path": "src/utils/codeGraph.ts",
+      "kind": "function",
+      "type": "function",
+      "line": 6,
+      "endLine": 16,
+      "size": 12,
+      "metrics": {
+        "loc": 9,
+        "complexity": 1
+      },
+      "complexity": 1,
+      "calls": [
+        "map",
+        "analyzeImports",
+        "join",
+        "filter",
+        "endsWith"
+      ],
+      "extendsName": null,
+      "implementsNames": []
+    },
+    {
+      "id": "symbol:src/utils/codeGraph.ts#resolveModulePath",
+      "name": "resolveModulePath",
+      "path": "src/utils/codeGraph.ts",
+      "kind": "function",
+      "type": "function",
+      "line": 17,
+      "endLine": 21,
+      "size": 6,
+      "metrics": {
+        "loc": 4,
+        "complexity": 1
+      },
+      "complexity": 1,
+      "calls": [
+        "split"
+      ],
+      "extendsName": null,
+      "implementsNames": []
+    },
+    {
+      "id": "symbol:src/utils/codeGraph.ts#analyzeImports",
+      "name": "analyzeImports",
+      "path": "src/utils/codeGraph.ts",
+      "kind": "function",
+      "type": "function",
+      "line": 22,
+      "endLine": 29,
+      "size": 8,
+      "metrics": {
+        "loc": 6,
+        "complexity": 1
+      },
+      "complexity": 1,
+      "calls": [
+        "matchAll",
+        "map",
+        "filter",
+        "startsWith"
+      ],
+      "extendsName": null,
+      "implementsNames": []
+    },
+    {
+      "id": "export:src/utils/codeGraph.ts:1:CodeGraphSummary",
+      "name": "CodeGraphSummary",
+      "label": "CodeGraphSummary",
+      "path": "src/utils/codeGraph.ts",
+      "kind": "export",
+      "type": "export",
+      "line": 1,
+      "metrics": {}
+    },
+    {
+      "id": "export:src/utils/codeGraph.ts:7:buildCodeGraph",
+      "name": "buildCodeGraph",
+      "label": "buildCodeGraph",
+      "path": "src/utils/codeGraph.ts",
+      "kind": "export",
+      "type": "export",
+      "line": 7,
+      "metrics": {}
+    },
+    {
+      "id": "export:src/utils/codeGraph.ts:18:resolveModulePath",
+      "name": "resolveModulePath",
+      "label": "resolveModulePath",
+      "path": "src/utils/codeGraph.ts",
+      "kind": "export",
+      "type": "export",
+      "line": 18,
+      "metrics": {}
+    },
+    {
+      "id": "export:src/utils/codeGraph.ts:23:analyzeImports",
+      "name": "analyzeImports",
+      "label": "analyzeImports",
+      "path": "src/utils/codeGraph.ts",
+      "kind": "export",
+      "type": "export",
+      "line": 23,
+      "metrics": {}
+    },
+    {
+      "id": "module:src/xr/HandTrackingSystem.ts",
+      "name": "HandTrackingSystem.ts",
+      "label": "HandTrackingSystem.ts",
+      "path": "src/xr/HandTrackingSystem.ts",
+      "kind": "module",
+      "type": "module",
+      "metrics": {
+        "loc": 47,
+        "imports": 0
+      }
+    },
+    {
+      "id": "symbol:src/xr/HandTrackingSystem.ts#HandTrackingOptions",
+      "name": "HandTrackingOptions",
+      "path": "src/xr/HandTrackingSystem.ts",
+      "kind": "interface",
+      "type": "interface",
+      "line": 1,
+      "endLine": 4,
+      "size": 5,
+      "metrics": {
+        "loc": 4,
+        "complexity": 1
+      },
+      "complexity": 1,
+      "calls": [],
+      "extendsName": null,
+      "implementsNames": []
+    },
+    {
+      "id": "symbol:src/xr/HandTrackingSystem.ts#HandPose",
+      "name": "HandPose",
+      "path": "src/xr/HandTrackingSystem.ts",
+      "kind": "interface",
+      "type": "interface",
+      "line": 5,
+      "endLine": 10,
+      "size": 7,
+      "metrics": {
+        "loc": 5,
+        "complexity": 1
+      },
+      "complexity": 1,
+      "calls": [],
+      "extendsName": null,
+      "implementsNames": []
+    },
+    {
+      "id": "symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem",
+      "name": "HandTrackingSystem",
+      "path": "src/xr/HandTrackingSystem.ts",
+      "kind": "class",
+      "type": "class",
+      "line": 11,
+      "endLine": 33,
+      "size": 24,
+      "metrics": {
+        "loc": 19,
+        "complexity": 1
+      },
+      "complexity": 1,
+      "calls": [
+        "constructor",
+        "start",
+        "normalizeHandPose",
+        "classifyPose",
+        "classifyGesture"
+      ],
+      "extendsName": null,
+      "implementsNames": []
+    },
+    {
+      "id": "symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem.start",
+      "name": "start",
+      "symbolName": "HandTrackingSystem.start",
+      "path": "src/xr/HandTrackingSystem.ts",
+      "kind": "method",
+      "type": "method",
+      "line": 14,
+      "endLine": 14,
+      "size": 1,
+      "metrics": {
+        "loc": 1,
+        "complexity": 1
+      },
+      "complexity": 1,
+      "calls": [],
+      "parentSymbolId": "symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem"
+    },
+    {
+      "id": "symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem.classifyPose",
+      "name": "classifyPose",
+      "symbolName": "HandTrackingSystem.classifyPose",
+      "path": "src/xr/HandTrackingSystem.ts",
+      "kind": "method",
+      "type": "method",
+      "line": 28,
+      "endLine": 28,
+      "size": 1,
+      "metrics": {
+        "loc": 1,
+        "complexity": 1
+      },
+      "complexity": 1,
+      "calls": [],
+      "parentSymbolId": "symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem"
+    },
+    {
+      "id": "symbol:src/xr/HandTrackingSystem.ts#createHandTrackingSystem",
+      "name": "createHandTrackingSystem",
+      "path": "src/xr/HandTrackingSystem.ts",
+      "kind": "function",
+      "type": "function",
+      "line": 34,
+      "endLine": 37,
+      "size": 5,
+      "metrics": {
+        "loc": 3,
+        "complexity": 1
+      },
+      "complexity": 1,
+      "calls": [
+        "HandTrackingSystem"
+      ],
+      "extendsName": null,
+      "implementsNames": []
+    },
+    {
+      "id": "symbol:src/xr/HandTrackingSystem.ts#normalizeHandPose",
+      "name": "normalizeHandPose",
+      "path": "src/xr/HandTrackingSystem.ts",
+      "kind": "function",
+      "type": "function",
+      "line": 38,
+      "endLine": 45,
+      "size": 9,
+      "metrics": {
+        "loc": 7,
+        "complexity": 1
+      },
+      "complexity": 1,
+      "calls": [
+        "max",
+        "min"
+      ],
+      "extendsName": null,
+      "implementsNames": []
+    },
+    {
+      "id": "symbol:src/xr/HandTrackingSystem.ts#classifyGesture",
+      "name": "classifyGesture",
+      "path": "src/xr/HandTrackingSystem.ts",
+      "kind": "function",
+      "type": "function",
+      "line": 46,
+      "endLine": 58,
+      "size": 13,
+      "metrics": {
+        "loc": 9,
+        "complexity": 3
+      },
+      "complexity": 3,
+      "calls": [],
+      "extendsName": null,
+      "implementsNames": []
+    },
+    {
+      "id": "export:src/xr/HandTrackingSystem.ts:1:HandTrackingOptions",
+      "name": "HandTrackingOptions",
+      "label": "HandTrackingOptions",
+      "path": "src/xr/HandTrackingSystem.ts",
+      "kind": "export",
+      "type": "export",
+      "line": 1,
+      "metrics": {}
+    },
+    {
+      "id": "export:src/xr/HandTrackingSystem.ts:6:HandPose",
+      "name": "HandPose",
+      "label": "HandPose",
+      "path": "src/xr/HandTrackingSystem.ts",
+      "kind": "export",
+      "type": "export",
+      "line": 6,
+      "metrics": {}
+    },
+    {
+      "id": "export:src/xr/HandTrackingSystem.ts:12:HandTrackingSystem",
+      "name": "HandTrackingSystem",
+      "label": "HandTrackingSystem",
+      "path": "src/xr/HandTrackingSystem.ts",
+      "kind": "export",
+      "type": "export",
+      "line": 12,
+      "metrics": {}
+    },
+    {
+      "id": "export:src/xr/HandTrackingSystem.ts:35:createHandTrackingSystem",
+      "name": "createHandTrackingSystem",
+      "label": "createHandTrackingSystem",
+      "path": "src/xr/HandTrackingSystem.ts",
+      "kind": "export",
+      "type": "export",
+      "line": 35,
+      "metrics": {}
+    },
+    {
+      "id": "export:src/xr/HandTrackingSystem.ts:39:normalizeHandPose",
+      "name": "normalizeHandPose",
+      "label": "normalizeHandPose",
+      "path": "src/xr/HandTrackingSystem.ts",
+      "kind": "export",
+      "type": "export",
+      "line": 39,
+      "metrics": {}
+    },
+    {
+      "id": "export:src/xr/HandTrackingSystem.ts:47:classifyGesture",
+      "name": "classifyGesture",
+      "label": "classifyGesture",
+      "path": "src/xr/HandTrackingSystem.ts",
+      "kind": "export",
+      "type": "export",
+      "line": 47,
+      "metrics": {}
+    },
+    {
+      "id": "module:tests/SceneManager.test.ts",
+      "name": "SceneManager.test.ts",
+      "label": "SceneManager.test.ts",
+      "path": "tests/SceneManager.test.ts",
+      "kind": "module",
+      "type": "module",
+      "metrics": {
+        "loc": 6,
+        "imports": 1
+      }
+    },
+    {
+      "id": "symbol:tests/SceneManager.test.ts#sceneManagerTestPlaceholder",
+      "name": "sceneManagerTestPlaceholder",
+      "path": "tests/SceneManager.test.ts",
+      "kind": "function",
+      "type": "function",
+      "line": 2,
+      "endLine": 8,
+      "size": 7,
+      "metrics": {
+        "loc": 5,
+        "complexity": 1
+      },
+      "complexity": 1,
+      "calls": [
+        "SceneManager",
+        "createSceneConfig",
+        "initializeScene"
+      ],
+      "extendsName": null,
+      "implementsNames": []
+    },
+    {
+      "id": "import:tests/SceneManager.test.ts:1:../src/SceneManager",
+      "name": "../src/SceneManager",
+      "label": "../src/SceneManager",
+      "path": "tests/SceneManager.test.ts",
+      "kind": "import",
+      "type": "import",
+      "line": 1,
+      "importedNames": [
+        "SceneManager",
+        "createSceneConfig"
+      ],
+      "metrics": {}
+    },
+    {
+      "id": "export:tests/SceneManager.test.ts:3:sceneManagerTestPlaceholder",
+      "name": "sceneManagerTestPlaceholder",
+      "label": "sceneManagerTestPlaceholder",
+      "path": "tests/SceneManager.test.ts",
+      "kind": "export",
+      "type": "export",
+      "line": 3,
+      "metrics": {}
+    },
+    {
+      "id": "module:tests/VoiceCommandRouter.test.ts",
+      "name": "VoiceCommandRouter.test.ts",
+      "label": "VoiceCommandRouter.test.ts",
+      "path": "tests/VoiceCommandRouter.test.ts",
+      "kind": "module",
+      "type": "module",
+      "metrics": {
+        "loc": 5,
+        "imports": 1
+      }
+    },
+    {
+      "id": "symbol:tests/VoiceCommandRouter.test.ts#voiceRouterTestPlaceholder",
+      "name": "voiceRouterTestPlaceholder",
+      "path": "tests/VoiceCommandRouter.test.ts",
+      "kind": "function",
+      "type": "function",
+      "line": 2,
+      "endLine": 7,
+      "size": 6,
+      "metrics": {
+        "loc": 4,
+        "complexity": 1
+      },
+      "complexity": 1,
+      "calls": [
+        "parseVoiceCommand"
+      ],
+      "extendsName": null,
+      "implementsNames": []
+    },
+    {
+      "id": "import:tests/VoiceCommandRouter.test.ts:1:../src/agents/VoiceCommandRouter",
+      "name": "../src/agents/VoiceCommandRouter",
+      "label": "../src/agents/VoiceCommandRouter",
+      "path": "tests/VoiceCommandRouter.test.ts",
+      "kind": "import",
+      "type": "import",
+      "line": 1,
+      "importedNames": [
+        "parseVoiceCommand"
+      ],
+      "metrics": {}
+    },
+    {
+      "id": "export:tests/VoiceCommandRouter.test.ts:3:voiceRouterTestPlaceholder",
+      "name": "voiceRouterTestPlaceholder",
+      "label": "voiceRouterTestPlaceholder",
+      "path": "tests/VoiceCommandRouter.test.ts",
+      "kind": "export",
+      "type": "export",
+      "line": 3,
+      "metrics": {}
+    },
+    {
+      "id": "script:test",
+      "name": "test",
+      "label": "test",
+      "path": "package.json",
+      "kind": "package_script",
+      "type": "package/script",
+      "command": "echo \"demo tests placeholder\"",
+      "metrics": {}
+    },
+    {
+      "id": "script:lint",
+      "name": "lint",
+      "label": "lint",
+      "path": "package.json",
+      "kind": "package_script",
+      "type": "package/script",
+      "command": "echo \"demo lint placeholder\"",
+      "metrics": {}
+    }
+  ],
+  "edges": [
+    {
+      "id": "repository:demo-repo->file:package.json:contains",
+      "source": "repository:demo-repo",
+      "target": "file:package.json",
+      "type": "contains"
+    },
+    {
+      "id": "repository:demo-repo->directory:src:contains",
+      "source": "repository:demo-repo",
+      "target": "directory:src",
+      "type": "contains"
+    },
+    {
+      "id": "directory:src->directory:src/agents:contains",
+      "source": "directory:src",
+      "target": "directory:src/agents",
+      "type": "contains"
+    },
+    {
+      "id": "directory:src/agents->file:src/agents/AgentTaskBuilder.ts:contains",
+      "source": "directory:src/agents",
+      "target": "file:src/agents/AgentTaskBuilder.ts",
+      "type": "contains"
+    },
+    {
+      "id": "directory:src/agents->file:src/agents/VoiceCommandRouter.ts:contains",
+      "source": "directory:src/agents",
+      "target": "file:src/agents/VoiceCommandRouter.ts",
+      "type": "contains"
+    },
+    {
+      "id": "directory:src->file:src/App.tsx:contains",
+      "source": "directory:src",
+      "target": "file:src/App.tsx",
+      "type": "contains"
+    },
+    {
+      "id": "directory:src->file:src/SceneManager.ts:contains",
+      "source": "directory:src",
+      "target": "file:src/SceneManager.ts",
+      "type": "contains"
+    },
+    {
+      "id": "directory:src->directory:src/utils:contains",
+      "source": "directory:src",
+      "target": "directory:src/utils",
+      "type": "contains"
+    },
+    {
+      "id": "directory:src/utils->file:src/utils/codeGraph.ts:contains",
+      "source": "directory:src/utils",
+      "target": "file:src/utils/codeGraph.ts",
+      "type": "contains"
+    },
+    {
+      "id": "directory:src->directory:src/xr:contains",
+      "source": "directory:src",
+      "target": "directory:src/xr",
+      "type": "contains"
+    },
+    {
+      "id": "directory:src/xr->file:src/xr/HandTrackingSystem.ts:contains",
+      "source": "directory:src/xr",
+      "target": "file:src/xr/HandTrackingSystem.ts",
+      "type": "contains"
+    },
+    {
+      "id": "repository:demo-repo->directory:tests:contains",
+      "source": "repository:demo-repo",
+      "target": "directory:tests",
+      "type": "contains"
+    },
+    {
+      "id": "directory:tests->file:tests/SceneManager.test.ts:contains",
+      "source": "directory:tests",
+      "target": "file:tests/SceneManager.test.ts",
+      "type": "contains"
+    },
+    {
+      "id": "directory:tests->file:tests/VoiceCommandRouter.test.ts:contains",
+      "source": "directory:tests",
+      "target": "file:tests/VoiceCommandRouter.test.ts",
+      "type": "contains"
+    },
+    {
+      "id": "repository:demo-repo->file:tsconfig.json:contains",
+      "source": "repository:demo-repo",
+      "target": "file:tsconfig.json",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/agents/AgentTaskBuilder.ts->module:src/agents/AgentTaskBuilder.ts:contains",
+      "source": "file:src/agents/AgentTaskBuilder.ts",
+      "target": "module:src/agents/AgentTaskBuilder.ts",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/agents/AgentTaskBuilder.ts->symbol:src/agents/AgentTaskBuilder.ts#AgentTaskInput:defines",
+      "source": "file:src/agents/AgentTaskBuilder.ts",
+      "target": "symbol:src/agents/AgentTaskBuilder.ts#AgentTaskInput",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/agents/AgentTaskBuilder.ts->symbol:src/agents/AgentTaskBuilder.ts#AgentTaskInput:contains",
+      "source": "module:src/agents/AgentTaskBuilder.ts",
+      "target": "symbol:src/agents/AgentTaskBuilder.ts#AgentTaskInput",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/agents/AgentTaskBuilder.ts->symbol:src/agents/AgentTaskBuilder.ts#buildAgentTask:defines",
+      "source": "file:src/agents/AgentTaskBuilder.ts",
+      "target": "symbol:src/agents/AgentTaskBuilder.ts#buildAgentTask",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/agents/AgentTaskBuilder.ts->symbol:src/agents/AgentTaskBuilder.ts#buildAgentTask:contains",
+      "source": "module:src/agents/AgentTaskBuilder.ts",
+      "target": "symbol:src/agents/AgentTaskBuilder.ts#buildAgentTask",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/agents/AgentTaskBuilder.ts->symbol:src/agents/AgentTaskBuilder.ts#summarizeSelection:defines",
+      "source": "file:src/agents/AgentTaskBuilder.ts",
+      "target": "symbol:src/agents/AgentTaskBuilder.ts#summarizeSelection",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/agents/AgentTaskBuilder.ts->symbol:src/agents/AgentTaskBuilder.ts#summarizeSelection:contains",
+      "source": "module:src/agents/AgentTaskBuilder.ts",
+      "target": "symbol:src/agents/AgentTaskBuilder.ts#summarizeSelection",
+      "type": "contains"
+    },
+    {
+      "id": "module:src/agents/AgentTaskBuilder.ts->export:src/agents/AgentTaskBuilder.ts:1:AgentTaskInput:contains",
+      "source": "module:src/agents/AgentTaskBuilder.ts",
+      "target": "export:src/agents/AgentTaskBuilder.ts:1:AgentTaskInput",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/agents/AgentTaskBuilder.ts->export:src/agents/AgentTaskBuilder.ts:1:AgentTaskInput:exports",
+      "source": "file:src/agents/AgentTaskBuilder.ts",
+      "target": "export:src/agents/AgentTaskBuilder.ts:1:AgentTaskInput",
+      "type": "exports"
+    },
+    {
+      "id": "module:src/agents/AgentTaskBuilder.ts->export:src/agents/AgentTaskBuilder.ts:8:buildAgentTask:contains",
+      "source": "module:src/agents/AgentTaskBuilder.ts",
+      "target": "export:src/agents/AgentTaskBuilder.ts:8:buildAgentTask",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/agents/AgentTaskBuilder.ts->export:src/agents/AgentTaskBuilder.ts:8:buildAgentTask:exports",
+      "source": "file:src/agents/AgentTaskBuilder.ts",
+      "target": "export:src/agents/AgentTaskBuilder.ts:8:buildAgentTask",
+      "type": "exports"
+    },
+    {
+      "id": "module:src/agents/AgentTaskBuilder.ts->export:src/agents/AgentTaskBuilder.ts:29:summarizeSelection:contains",
+      "source": "module:src/agents/AgentTaskBuilder.ts",
+      "target": "export:src/agents/AgentTaskBuilder.ts:29:summarizeSelection",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/agents/AgentTaskBuilder.ts->export:src/agents/AgentTaskBuilder.ts:29:summarizeSelection:exports",
+      "source": "file:src/agents/AgentTaskBuilder.ts",
+      "target": "export:src/agents/AgentTaskBuilder.ts:29:summarizeSelection",
+      "type": "exports"
+    },
+    {
+      "id": "file:src/agents/VoiceCommandRouter.ts->module:src/agents/VoiceCommandRouter.ts:contains",
+      "source": "file:src/agents/VoiceCommandRouter.ts",
+      "target": "module:src/agents/VoiceCommandRouter.ts",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/agents/VoiceCommandRouter.ts->symbol:src/agents/VoiceCommandRouter.ts#VoiceIntent:defines",
+      "source": "file:src/agents/VoiceCommandRouter.ts",
+      "target": "symbol:src/agents/VoiceCommandRouter.ts#VoiceIntent",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/agents/VoiceCommandRouter.ts->symbol:src/agents/VoiceCommandRouter.ts#VoiceIntent:contains",
+      "source": "module:src/agents/VoiceCommandRouter.ts",
+      "target": "symbol:src/agents/VoiceCommandRouter.ts#VoiceIntent",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/agents/VoiceCommandRouter.ts->symbol:src/agents/VoiceCommandRouter.ts#VoiceRouter:defines",
+      "source": "file:src/agents/VoiceCommandRouter.ts",
+      "target": "symbol:src/agents/VoiceCommandRouter.ts#VoiceRouter",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/agents/VoiceCommandRouter.ts->symbol:src/agents/VoiceCommandRouter.ts#VoiceRouter:contains",
+      "source": "module:src/agents/VoiceCommandRouter.ts",
+      "target": "symbol:src/agents/VoiceCommandRouter.ts#VoiceRouter",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/agents/VoiceCommandRouter.ts->symbol:src/agents/VoiceCommandRouter.ts#normalizeTranscript:defines",
+      "source": "file:src/agents/VoiceCommandRouter.ts",
+      "target": "symbol:src/agents/VoiceCommandRouter.ts#normalizeTranscript",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/agents/VoiceCommandRouter.ts->symbol:src/agents/VoiceCommandRouter.ts#normalizeTranscript:contains",
+      "source": "module:src/agents/VoiceCommandRouter.ts",
+      "target": "symbol:src/agents/VoiceCommandRouter.ts#normalizeTranscript",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/agents/VoiceCommandRouter.ts->symbol:src/agents/VoiceCommandRouter.ts#parseVoiceCommand:defines",
+      "source": "file:src/agents/VoiceCommandRouter.ts",
+      "target": "symbol:src/agents/VoiceCommandRouter.ts#parseVoiceCommand",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/agents/VoiceCommandRouter.ts->symbol:src/agents/VoiceCommandRouter.ts#parseVoiceCommand:contains",
+      "source": "module:src/agents/VoiceCommandRouter.ts",
+      "target": "symbol:src/agents/VoiceCommandRouter.ts#parseVoiceCommand",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/agents/VoiceCommandRouter.ts->symbol:src/agents/VoiceCommandRouter.ts#createDefaultVoiceRouter:defines",
+      "source": "file:src/agents/VoiceCommandRouter.ts",
+      "target": "symbol:src/agents/VoiceCommandRouter.ts#createDefaultVoiceRouter",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/agents/VoiceCommandRouter.ts->symbol:src/agents/VoiceCommandRouter.ts#createDefaultVoiceRouter:contains",
+      "source": "module:src/agents/VoiceCommandRouter.ts",
+      "target": "symbol:src/agents/VoiceCommandRouter.ts#createDefaultVoiceRouter",
+      "type": "contains"
+    },
+    {
+      "id": "module:src/agents/VoiceCommandRouter.ts->import:src/agents/VoiceCommandRouter.ts:1:../App:contains",
+      "source": "module:src/agents/VoiceCommandRouter.ts",
+      "target": "import:src/agents/VoiceCommandRouter.ts:1:../App",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/agents/VoiceCommandRouter.ts->file:src/App.tsx:imports:1",
+      "source": "file:src/agents/VoiceCommandRouter.ts",
+      "target": "file:src/App.tsx",
+      "type": "imports",
+      "line": 1,
+      "importedNames": [
+        "CockpitMode"
+      ],
+      "weight": 1
+    },
+    {
+      "id": "import:src/agents/VoiceCommandRouter.ts:1:../App->file:src/App.tsx:depends_on:1",
+      "source": "import:src/agents/VoiceCommandRouter.ts:1:../App",
+      "target": "file:src/App.tsx",
+      "type": "depends_on",
+      "line": 1,
+      "importedNames": [
+        "CockpitMode"
+      ],
+      "weight": 1
+    },
+    {
+      "id": "module:src/agents/VoiceCommandRouter.ts->export:src/agents/VoiceCommandRouter.ts:3:VoiceIntent:contains",
+      "source": "module:src/agents/VoiceCommandRouter.ts",
+      "target": "export:src/agents/VoiceCommandRouter.ts:3:VoiceIntent",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/agents/VoiceCommandRouter.ts->export:src/agents/VoiceCommandRouter.ts:3:VoiceIntent:exports",
+      "source": "file:src/agents/VoiceCommandRouter.ts",
+      "target": "export:src/agents/VoiceCommandRouter.ts:3:VoiceIntent",
+      "type": "exports"
+    },
+    {
+      "id": "module:src/agents/VoiceCommandRouter.ts->export:src/agents/VoiceCommandRouter.ts:10:VoiceRouter:contains",
+      "source": "module:src/agents/VoiceCommandRouter.ts",
+      "target": "export:src/agents/VoiceCommandRouter.ts:10:VoiceRouter",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/agents/VoiceCommandRouter.ts->export:src/agents/VoiceCommandRouter.ts:10:VoiceRouter:exports",
+      "source": "file:src/agents/VoiceCommandRouter.ts",
+      "target": "export:src/agents/VoiceCommandRouter.ts:10:VoiceRouter",
+      "type": "exports"
+    },
+    {
+      "id": "module:src/agents/VoiceCommandRouter.ts->export:src/agents/VoiceCommandRouter.ts:14:normalizeTranscript:contains",
+      "source": "module:src/agents/VoiceCommandRouter.ts",
+      "target": "export:src/agents/VoiceCommandRouter.ts:14:normalizeTranscript",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/agents/VoiceCommandRouter.ts->export:src/agents/VoiceCommandRouter.ts:14:normalizeTranscript:exports",
+      "source": "file:src/agents/VoiceCommandRouter.ts",
+      "target": "export:src/agents/VoiceCommandRouter.ts:14:normalizeTranscript",
+      "type": "exports"
+    },
+    {
+      "id": "module:src/agents/VoiceCommandRouter.ts->export:src/agents/VoiceCommandRouter.ts:18:parseVoiceCommand:contains",
+      "source": "module:src/agents/VoiceCommandRouter.ts",
+      "target": "export:src/agents/VoiceCommandRouter.ts:18:parseVoiceCommand",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/agents/VoiceCommandRouter.ts->export:src/agents/VoiceCommandRouter.ts:18:parseVoiceCommand:exports",
+      "source": "file:src/agents/VoiceCommandRouter.ts",
+      "target": "export:src/agents/VoiceCommandRouter.ts:18:parseVoiceCommand",
+      "type": "exports"
+    },
+    {
+      "id": "module:src/agents/VoiceCommandRouter.ts->export:src/agents/VoiceCommandRouter.ts:40:createDefaultVoiceRouter:contains",
+      "source": "module:src/agents/VoiceCommandRouter.ts",
+      "target": "export:src/agents/VoiceCommandRouter.ts:40:createDefaultVoiceRouter",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/agents/VoiceCommandRouter.ts->export:src/agents/VoiceCommandRouter.ts:40:createDefaultVoiceRouter:exports",
+      "source": "file:src/agents/VoiceCommandRouter.ts",
+      "target": "export:src/agents/VoiceCommandRouter.ts:40:createDefaultVoiceRouter",
+      "type": "exports"
+    },
+    {
+      "id": "file:src/App.tsx->module:src/App.tsx:contains",
+      "source": "file:src/App.tsx",
+      "target": "module:src/App.tsx",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/App.tsx->symbol:src/App.tsx#CockpitMode:defines",
+      "source": "file:src/App.tsx",
+      "target": "symbol:src/App.tsx#CockpitMode",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/App.tsx->symbol:src/App.tsx#CockpitMode:contains",
+      "source": "module:src/App.tsx",
+      "target": "symbol:src/App.tsx#CockpitMode",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/App.tsx->symbol:src/App.tsx#App:defines",
+      "source": "file:src/App.tsx",
+      "target": "symbol:src/App.tsx#App",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/App.tsx->symbol:src/App.tsx#App:contains",
+      "source": "module:src/App.tsx",
+      "target": "symbol:src/App.tsx#App",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/App.tsx->symbol:src/App.tsx#initializeCockpit:defines",
+      "source": "file:src/App.tsx",
+      "target": "symbol:src/App.tsx#initializeCockpit",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/App.tsx->symbol:src/App.tsx#initializeCockpit:contains",
+      "source": "module:src/App.tsx",
+      "target": "symbol:src/App.tsx#initializeCockpit",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/App.tsx->symbol:src/App.tsx#createRefactorTask:defines",
+      "source": "file:src/App.tsx",
+      "target": "symbol:src/App.tsx#createRefactorTask",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/App.tsx->symbol:src/App.tsx#createRefactorTask:contains",
+      "source": "module:src/App.tsx",
+      "target": "symbol:src/App.tsx#createRefactorTask",
+      "type": "contains"
+    },
+    {
+      "id": "module:src/App.tsx->import:src/App.tsx:1:react:contains",
+      "source": "module:src/App.tsx",
+      "target": "import:src/App.tsx:1:react",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/App.tsx->package:react:imports:1",
+      "source": "file:src/App.tsx",
+      "target": "package:react",
+      "type": "imports",
+      "line": 1,
+      "importedNames": [
+        "React",
+        "useMemo",
+        "useState"
+      ],
+      "weight": 1
+    },
+    {
+      "id": "import:src/App.tsx:1:react->package:react:depends_on:1",
+      "source": "import:src/App.tsx:1:react",
+      "target": "package:react",
+      "type": "depends_on",
+      "line": 1,
+      "importedNames": [
+        "React",
+        "useMemo",
+        "useState"
+      ],
+      "weight": 1
+    },
+    {
+      "id": "module:src/App.tsx->import:src/App.tsx:2:./SceneManager:contains",
+      "source": "module:src/App.tsx",
+      "target": "import:src/App.tsx:2:./SceneManager",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/App.tsx->file:src/SceneManager.ts:imports:2",
+      "source": "file:src/App.tsx",
+      "target": "file:src/SceneManager.ts",
+      "type": "imports",
+      "line": 2,
+      "importedNames": [
+        "SceneManager",
+        "createSceneConfig"
+      ],
+      "weight": 1
+    },
+    {
+      "id": "import:src/App.tsx:2:./SceneManager->file:src/SceneManager.ts:depends_on:2",
+      "source": "import:src/App.tsx:2:./SceneManager",
+      "target": "file:src/SceneManager.ts",
+      "type": "depends_on",
+      "line": 2,
+      "importedNames": [
+        "SceneManager",
+        "createSceneConfig"
+      ],
+      "weight": 1
+    },
+    {
+      "id": "module:src/App.tsx->import:src/App.tsx:3:./agents/VoiceCommandRouter:contains",
+      "source": "module:src/App.tsx",
+      "target": "import:src/App.tsx:3:./agents/VoiceCommandRouter",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/App.tsx->file:src/agents/VoiceCommandRouter.ts:imports:3",
+      "source": "file:src/App.tsx",
+      "target": "file:src/agents/VoiceCommandRouter.ts",
+      "type": "imports",
+      "line": 3,
+      "importedNames": [
+        "createDefaultVoiceRouter",
+        "parseVoiceCommand"
+      ],
+      "weight": 1
+    },
+    {
+      "id": "import:src/App.tsx:3:./agents/VoiceCommandRouter->file:src/agents/VoiceCommandRouter.ts:depends_on:3",
+      "source": "import:src/App.tsx:3:./agents/VoiceCommandRouter",
+      "target": "file:src/agents/VoiceCommandRouter.ts",
+      "type": "depends_on",
+      "line": 3,
+      "importedNames": [
+        "createDefaultVoiceRouter",
+        "parseVoiceCommand"
+      ],
+      "weight": 1
+    },
+    {
+      "id": "module:src/App.tsx->import:src/App.tsx:4:./agents/AgentTaskBuilder:contains",
+      "source": "module:src/App.tsx",
+      "target": "import:src/App.tsx:4:./agents/AgentTaskBuilder",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/App.tsx->file:src/agents/AgentTaskBuilder.ts:imports:4",
+      "source": "file:src/App.tsx",
+      "target": "file:src/agents/AgentTaskBuilder.ts",
+      "type": "imports",
+      "line": 4,
+      "importedNames": [
+        "buildAgentTask"
+      ],
+      "weight": 1
+    },
+    {
+      "id": "import:src/App.tsx:4:./agents/AgentTaskBuilder->file:src/agents/AgentTaskBuilder.ts:depends_on:4",
+      "source": "import:src/App.tsx:4:./agents/AgentTaskBuilder",
+      "target": "file:src/agents/AgentTaskBuilder.ts",
+      "type": "depends_on",
+      "line": 4,
+      "importedNames": [
+        "buildAgentTask"
+      ],
+      "weight": 1
+    },
+    {
+      "id": "module:src/App.tsx->import:src/App.tsx:5:./utils/codeGraph:contains",
+      "source": "module:src/App.tsx",
+      "target": "import:src/App.tsx:5:./utils/codeGraph",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/App.tsx->file:src/utils/codeGraph.ts:imports:5",
+      "source": "file:src/App.tsx",
+      "target": "file:src/utils/codeGraph.ts",
+      "type": "imports",
+      "line": 5,
+      "importedNames": [
+        "buildCodeGraph"
+      ],
+      "weight": 1
+    },
+    {
+      "id": "import:src/App.tsx:5:./utils/codeGraph->file:src/utils/codeGraph.ts:depends_on:5",
+      "source": "import:src/App.tsx:5:./utils/codeGraph",
+      "target": "file:src/utils/codeGraph.ts",
+      "type": "depends_on",
+      "line": 5,
+      "importedNames": [
+        "buildCodeGraph"
+      ],
+      "weight": 1
+    },
+    {
+      "id": "module:src/App.tsx->export:src/App.tsx:7:CockpitMode:contains",
+      "source": "module:src/App.tsx",
+      "target": "export:src/App.tsx:7:CockpitMode",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/App.tsx->export:src/App.tsx:7:CockpitMode:exports",
+      "source": "file:src/App.tsx",
+      "target": "export:src/App.tsx:7:CockpitMode",
+      "type": "exports"
+    },
+    {
+      "id": "module:src/App.tsx->export:src/App.tsx:9:App:contains",
+      "source": "module:src/App.tsx",
+      "target": "export:src/App.tsx:9:App",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/App.tsx->export:src/App.tsx:9:App:exports",
+      "source": "file:src/App.tsx",
+      "target": "export:src/App.tsx:9:App",
+      "type": "exports"
+    },
+    {
+      "id": "file:src/SceneManager.ts->module:src/SceneManager.ts:contains",
+      "source": "file:src/SceneManager.ts",
+      "target": "module:src/SceneManager.ts",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/SceneManager.ts->symbol:src/SceneManager.ts#SceneConfig:defines",
+      "source": "file:src/SceneManager.ts",
+      "target": "symbol:src/SceneManager.ts#SceneConfig",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/SceneManager.ts->symbol:src/SceneManager.ts#SceneConfig:contains",
+      "source": "module:src/SceneManager.ts",
+      "target": "symbol:src/SceneManager.ts#SceneConfig",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/SceneManager.ts->symbol:src/SceneManager.ts#createSceneConfig:defines",
+      "source": "file:src/SceneManager.ts",
+      "target": "symbol:src/SceneManager.ts#createSceneConfig",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/SceneManager.ts->symbol:src/SceneManager.ts#createSceneConfig:contains",
+      "source": "module:src/SceneManager.ts",
+      "target": "symbol:src/SceneManager.ts#createSceneConfig",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/SceneManager.ts->symbol:src/SceneManager.ts#SceneManager:defines",
+      "source": "file:src/SceneManager.ts",
+      "target": "symbol:src/SceneManager.ts#SceneManager",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/SceneManager.ts->symbol:src/SceneManager.ts#SceneManager:contains",
+      "source": "module:src/SceneManager.ts",
+      "target": "symbol:src/SceneManager.ts#SceneManager",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/SceneManager.ts->symbol:src/SceneManager.ts#SceneManager.initializeScene:defines",
+      "source": "file:src/SceneManager.ts",
+      "target": "symbol:src/SceneManager.ts#SceneManager.initializeScene",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/SceneManager.ts->symbol:src/SceneManager.ts#SceneManager.initializeScene:contains",
+      "source": "module:src/SceneManager.ts",
+      "target": "symbol:src/SceneManager.ts#SceneManager.initializeScene",
+      "type": "contains"
+    },
+    {
+      "id": "symbol:src/SceneManager.ts#SceneManager->symbol:src/SceneManager.ts#SceneManager.initializeScene:contains",
+      "source": "symbol:src/SceneManager.ts#SceneManager",
+      "target": "symbol:src/SceneManager.ts#SceneManager.initializeScene",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/SceneManager.ts->symbol:src/SceneManager.ts#SceneManager.if:defines",
+      "source": "file:src/SceneManager.ts",
+      "target": "symbol:src/SceneManager.ts#SceneManager.if",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/SceneManager.ts->symbol:src/SceneManager.ts#SceneManager.if:contains",
+      "source": "module:src/SceneManager.ts",
+      "target": "symbol:src/SceneManager.ts#SceneManager.if",
+      "type": "contains"
+    },
+    {
+      "id": "symbol:src/SceneManager.ts#SceneManager->symbol:src/SceneManager.ts#SceneManager.if:contains",
+      "source": "symbol:src/SceneManager.ts#SceneManager",
+      "target": "symbol:src/SceneManager.ts#SceneManager.if",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/SceneManager.ts->symbol:src/SceneManager.ts#SceneManager.initRenderer:defines",
+      "source": "file:src/SceneManager.ts",
+      "target": "symbol:src/SceneManager.ts#SceneManager.initRenderer",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/SceneManager.ts->symbol:src/SceneManager.ts#SceneManager.initRenderer:contains",
+      "source": "module:src/SceneManager.ts",
+      "target": "symbol:src/SceneManager.ts#SceneManager.initRenderer",
+      "type": "contains"
+    },
+    {
+      "id": "symbol:src/SceneManager.ts#SceneManager->symbol:src/SceneManager.ts#SceneManager.initRenderer:contains",
+      "source": "symbol:src/SceneManager.ts#SceneManager",
+      "target": "symbol:src/SceneManager.ts#SceneManager.initRenderer",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/SceneManager.ts->symbol:src/SceneManager.ts#SceneManager.loadAssets:defines",
+      "source": "file:src/SceneManager.ts",
+      "target": "symbol:src/SceneManager.ts#SceneManager.loadAssets",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/SceneManager.ts->symbol:src/SceneManager.ts#SceneManager.loadAssets:contains",
+      "source": "module:src/SceneManager.ts",
+      "target": "symbol:src/SceneManager.ts#SceneManager.loadAssets",
+      "type": "contains"
+    },
+    {
+      "id": "symbol:src/SceneManager.ts#SceneManager->symbol:src/SceneManager.ts#SceneManager.loadAssets:contains",
+      "source": "symbol:src/SceneManager.ts#SceneManager",
+      "target": "symbol:src/SceneManager.ts#SceneManager.loadAssets",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/SceneManager.ts->symbol:src/SceneManager.ts#SceneManager.setupHandTracking:defines",
+      "source": "file:src/SceneManager.ts",
+      "target": "symbol:src/SceneManager.ts#SceneManager.setupHandTracking",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/SceneManager.ts->symbol:src/SceneManager.ts#SceneManager.setupHandTracking:contains",
+      "source": "module:src/SceneManager.ts",
+      "target": "symbol:src/SceneManager.ts#SceneManager.setupHandTracking",
+      "type": "contains"
+    },
+    {
+      "id": "symbol:src/SceneManager.ts#SceneManager->symbol:src/SceneManager.ts#SceneManager.setupHandTracking:contains",
+      "source": "symbol:src/SceneManager.ts#SceneManager",
+      "target": "symbol:src/SceneManager.ts#SceneManager.setupHandTracking",
+      "type": "contains"
+    },
+    {
+      "id": "module:src/SceneManager.ts->import:src/SceneManager.ts:1:./xr/HandTrackingSystem:contains",
+      "source": "module:src/SceneManager.ts",
+      "target": "import:src/SceneManager.ts:1:./xr/HandTrackingSystem",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/SceneManager.ts->file:src/xr/HandTrackingSystem.ts:imports:1",
+      "source": "file:src/SceneManager.ts",
+      "target": "file:src/xr/HandTrackingSystem.ts",
+      "type": "imports",
+      "line": 1,
+      "importedNames": [
+        "HandTrackingSystem",
+        "createHandTrackingSystem"
+      ],
+      "weight": 1
+    },
+    {
+      "id": "import:src/SceneManager.ts:1:./xr/HandTrackingSystem->file:src/xr/HandTrackingSystem.ts:depends_on:1",
+      "source": "import:src/SceneManager.ts:1:./xr/HandTrackingSystem",
+      "target": "file:src/xr/HandTrackingSystem.ts",
+      "type": "depends_on",
+      "line": 1,
+      "importedNames": [
+        "HandTrackingSystem",
+        "createHandTrackingSystem"
+      ],
+      "weight": 1
+    },
+    {
+      "id": "module:src/SceneManager.ts->import:src/SceneManager.ts:2:./utils/codeGraph:contains",
+      "source": "module:src/SceneManager.ts",
+      "target": "import:src/SceneManager.ts:2:./utils/codeGraph",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/SceneManager.ts->file:src/utils/codeGraph.ts:imports:2",
+      "source": "file:src/SceneManager.ts",
+      "target": "file:src/utils/codeGraph.ts",
+      "type": "imports",
+      "line": 2,
+      "importedNames": [
+        "buildCodeGraph"
+      ],
+      "weight": 1
+    },
+    {
+      "id": "import:src/SceneManager.ts:2:./utils/codeGraph->file:src/utils/codeGraph.ts:depends_on:2",
+      "source": "import:src/SceneManager.ts:2:./utils/codeGraph",
+      "target": "file:src/utils/codeGraph.ts",
+      "type": "depends_on",
+      "line": 2,
+      "importedNames": [
+        "buildCodeGraph"
+      ],
+      "weight": 1
+    },
+    {
+      "id": "module:src/SceneManager.ts->export:src/SceneManager.ts:4:SceneConfig:contains",
+      "source": "module:src/SceneManager.ts",
+      "target": "export:src/SceneManager.ts:4:SceneConfig",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/SceneManager.ts->export:src/SceneManager.ts:4:SceneConfig:exports",
+      "source": "file:src/SceneManager.ts",
+      "target": "export:src/SceneManager.ts:4:SceneConfig",
+      "type": "exports"
+    },
+    {
+      "id": "module:src/SceneManager.ts->export:src/SceneManager.ts:11:createSceneConfig:contains",
+      "source": "module:src/SceneManager.ts",
+      "target": "export:src/SceneManager.ts:11:createSceneConfig",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/SceneManager.ts->export:src/SceneManager.ts:11:createSceneConfig:exports",
+      "source": "file:src/SceneManager.ts",
+      "target": "export:src/SceneManager.ts:11:createSceneConfig",
+      "type": "exports"
+    },
+    {
+      "id": "module:src/SceneManager.ts->export:src/SceneManager.ts:20:SceneManager:contains",
+      "source": "module:src/SceneManager.ts",
+      "target": "export:src/SceneManager.ts:20:SceneManager",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/SceneManager.ts->export:src/SceneManager.ts:20:SceneManager:exports",
+      "source": "file:src/SceneManager.ts",
+      "target": "export:src/SceneManager.ts:20:SceneManager",
+      "type": "exports"
+    },
+    {
+      "id": "file:src/utils/codeGraph.ts->module:src/utils/codeGraph.ts:contains",
+      "source": "file:src/utils/codeGraph.ts",
+      "target": "module:src/utils/codeGraph.ts",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/utils/codeGraph.ts->symbol:src/utils/codeGraph.ts#CodeGraphSummary:defines",
+      "source": "file:src/utils/codeGraph.ts",
+      "target": "symbol:src/utils/codeGraph.ts#CodeGraphSummary",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/utils/codeGraph.ts->symbol:src/utils/codeGraph.ts#CodeGraphSummary:contains",
+      "source": "module:src/utils/codeGraph.ts",
+      "target": "symbol:src/utils/codeGraph.ts#CodeGraphSummary",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/utils/codeGraph.ts->symbol:src/utils/codeGraph.ts#buildCodeGraph:defines",
+      "source": "file:src/utils/codeGraph.ts",
+      "target": "symbol:src/utils/codeGraph.ts#buildCodeGraph",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/utils/codeGraph.ts->symbol:src/utils/codeGraph.ts#buildCodeGraph:contains",
+      "source": "module:src/utils/codeGraph.ts",
+      "target": "symbol:src/utils/codeGraph.ts#buildCodeGraph",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/utils/codeGraph.ts->symbol:src/utils/codeGraph.ts#resolveModulePath:defines",
+      "source": "file:src/utils/codeGraph.ts",
+      "target": "symbol:src/utils/codeGraph.ts#resolveModulePath",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/utils/codeGraph.ts->symbol:src/utils/codeGraph.ts#resolveModulePath:contains",
+      "source": "module:src/utils/codeGraph.ts",
+      "target": "symbol:src/utils/codeGraph.ts#resolveModulePath",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/utils/codeGraph.ts->symbol:src/utils/codeGraph.ts#analyzeImports:defines",
+      "source": "file:src/utils/codeGraph.ts",
+      "target": "symbol:src/utils/codeGraph.ts#analyzeImports",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/utils/codeGraph.ts->symbol:src/utils/codeGraph.ts#analyzeImports:contains",
+      "source": "module:src/utils/codeGraph.ts",
+      "target": "symbol:src/utils/codeGraph.ts#analyzeImports",
+      "type": "contains"
+    },
+    {
+      "id": "module:src/utils/codeGraph.ts->export:src/utils/codeGraph.ts:1:CodeGraphSummary:contains",
+      "source": "module:src/utils/codeGraph.ts",
+      "target": "export:src/utils/codeGraph.ts:1:CodeGraphSummary",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/utils/codeGraph.ts->export:src/utils/codeGraph.ts:1:CodeGraphSummary:exports",
+      "source": "file:src/utils/codeGraph.ts",
+      "target": "export:src/utils/codeGraph.ts:1:CodeGraphSummary",
+      "type": "exports"
+    },
+    {
+      "id": "module:src/utils/codeGraph.ts->export:src/utils/codeGraph.ts:7:buildCodeGraph:contains",
+      "source": "module:src/utils/codeGraph.ts",
+      "target": "export:src/utils/codeGraph.ts:7:buildCodeGraph",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/utils/codeGraph.ts->export:src/utils/codeGraph.ts:7:buildCodeGraph:exports",
+      "source": "file:src/utils/codeGraph.ts",
+      "target": "export:src/utils/codeGraph.ts:7:buildCodeGraph",
+      "type": "exports"
+    },
+    {
+      "id": "module:src/utils/codeGraph.ts->export:src/utils/codeGraph.ts:18:resolveModulePath:contains",
+      "source": "module:src/utils/codeGraph.ts",
+      "target": "export:src/utils/codeGraph.ts:18:resolveModulePath",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/utils/codeGraph.ts->export:src/utils/codeGraph.ts:18:resolveModulePath:exports",
+      "source": "file:src/utils/codeGraph.ts",
+      "target": "export:src/utils/codeGraph.ts:18:resolveModulePath",
+      "type": "exports"
+    },
+    {
+      "id": "module:src/utils/codeGraph.ts->export:src/utils/codeGraph.ts:23:analyzeImports:contains",
+      "source": "module:src/utils/codeGraph.ts",
+      "target": "export:src/utils/codeGraph.ts:23:analyzeImports",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/utils/codeGraph.ts->export:src/utils/codeGraph.ts:23:analyzeImports:exports",
+      "source": "file:src/utils/codeGraph.ts",
+      "target": "export:src/utils/codeGraph.ts:23:analyzeImports",
+      "type": "exports"
+    },
+    {
+      "id": "file:src/xr/HandTrackingSystem.ts->module:src/xr/HandTrackingSystem.ts:contains",
+      "source": "file:src/xr/HandTrackingSystem.ts",
+      "target": "module:src/xr/HandTrackingSystem.ts",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/xr/HandTrackingSystem.ts->symbol:src/xr/HandTrackingSystem.ts#HandTrackingOptions:defines",
+      "source": "file:src/xr/HandTrackingSystem.ts",
+      "target": "symbol:src/xr/HandTrackingSystem.ts#HandTrackingOptions",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/xr/HandTrackingSystem.ts->symbol:src/xr/HandTrackingSystem.ts#HandTrackingOptions:contains",
+      "source": "module:src/xr/HandTrackingSystem.ts",
+      "target": "symbol:src/xr/HandTrackingSystem.ts#HandTrackingOptions",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/xr/HandTrackingSystem.ts->symbol:src/xr/HandTrackingSystem.ts#HandPose:defines",
+      "source": "file:src/xr/HandTrackingSystem.ts",
+      "target": "symbol:src/xr/HandTrackingSystem.ts#HandPose",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/xr/HandTrackingSystem.ts->symbol:src/xr/HandTrackingSystem.ts#HandPose:contains",
+      "source": "module:src/xr/HandTrackingSystem.ts",
+      "target": "symbol:src/xr/HandTrackingSystem.ts#HandPose",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/xr/HandTrackingSystem.ts->symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem:defines",
+      "source": "file:src/xr/HandTrackingSystem.ts",
+      "target": "symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/xr/HandTrackingSystem.ts->symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem:contains",
+      "source": "module:src/xr/HandTrackingSystem.ts",
+      "target": "symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/xr/HandTrackingSystem.ts->symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem.start:defines",
+      "source": "file:src/xr/HandTrackingSystem.ts",
+      "target": "symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem.start",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/xr/HandTrackingSystem.ts->symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem.start:contains",
+      "source": "module:src/xr/HandTrackingSystem.ts",
+      "target": "symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem.start",
+      "type": "contains"
+    },
+    {
+      "id": "symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem->symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem.start:contains",
+      "source": "symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem",
+      "target": "symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem.start",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/xr/HandTrackingSystem.ts->symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem.classifyPose:defines",
+      "source": "file:src/xr/HandTrackingSystem.ts",
+      "target": "symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem.classifyPose",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/xr/HandTrackingSystem.ts->symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem.classifyPose:contains",
+      "source": "module:src/xr/HandTrackingSystem.ts",
+      "target": "symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem.classifyPose",
+      "type": "contains"
+    },
+    {
+      "id": "symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem->symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem.classifyPose:contains",
+      "source": "symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem",
+      "target": "symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem.classifyPose",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/xr/HandTrackingSystem.ts->symbol:src/xr/HandTrackingSystem.ts#createHandTrackingSystem:defines",
+      "source": "file:src/xr/HandTrackingSystem.ts",
+      "target": "symbol:src/xr/HandTrackingSystem.ts#createHandTrackingSystem",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/xr/HandTrackingSystem.ts->symbol:src/xr/HandTrackingSystem.ts#createHandTrackingSystem:contains",
+      "source": "module:src/xr/HandTrackingSystem.ts",
+      "target": "symbol:src/xr/HandTrackingSystem.ts#createHandTrackingSystem",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/xr/HandTrackingSystem.ts->symbol:src/xr/HandTrackingSystem.ts#normalizeHandPose:defines",
+      "source": "file:src/xr/HandTrackingSystem.ts",
+      "target": "symbol:src/xr/HandTrackingSystem.ts#normalizeHandPose",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/xr/HandTrackingSystem.ts->symbol:src/xr/HandTrackingSystem.ts#normalizeHandPose:contains",
+      "source": "module:src/xr/HandTrackingSystem.ts",
+      "target": "symbol:src/xr/HandTrackingSystem.ts#normalizeHandPose",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/xr/HandTrackingSystem.ts->symbol:src/xr/HandTrackingSystem.ts#classifyGesture:defines",
+      "source": "file:src/xr/HandTrackingSystem.ts",
+      "target": "symbol:src/xr/HandTrackingSystem.ts#classifyGesture",
+      "type": "defines"
+    },
+    {
+      "id": "module:src/xr/HandTrackingSystem.ts->symbol:src/xr/HandTrackingSystem.ts#classifyGesture:contains",
+      "source": "module:src/xr/HandTrackingSystem.ts",
+      "target": "symbol:src/xr/HandTrackingSystem.ts#classifyGesture",
+      "type": "contains"
+    },
+    {
+      "id": "module:src/xr/HandTrackingSystem.ts->export:src/xr/HandTrackingSystem.ts:1:HandTrackingOptions:contains",
+      "source": "module:src/xr/HandTrackingSystem.ts",
+      "target": "export:src/xr/HandTrackingSystem.ts:1:HandTrackingOptions",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/xr/HandTrackingSystem.ts->export:src/xr/HandTrackingSystem.ts:1:HandTrackingOptions:exports",
+      "source": "file:src/xr/HandTrackingSystem.ts",
+      "target": "export:src/xr/HandTrackingSystem.ts:1:HandTrackingOptions",
+      "type": "exports"
+    },
+    {
+      "id": "module:src/xr/HandTrackingSystem.ts->export:src/xr/HandTrackingSystem.ts:6:HandPose:contains",
+      "source": "module:src/xr/HandTrackingSystem.ts",
+      "target": "export:src/xr/HandTrackingSystem.ts:6:HandPose",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/xr/HandTrackingSystem.ts->export:src/xr/HandTrackingSystem.ts:6:HandPose:exports",
+      "source": "file:src/xr/HandTrackingSystem.ts",
+      "target": "export:src/xr/HandTrackingSystem.ts:6:HandPose",
+      "type": "exports"
+    },
+    {
+      "id": "module:src/xr/HandTrackingSystem.ts->export:src/xr/HandTrackingSystem.ts:12:HandTrackingSystem:contains",
+      "source": "module:src/xr/HandTrackingSystem.ts",
+      "target": "export:src/xr/HandTrackingSystem.ts:12:HandTrackingSystem",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/xr/HandTrackingSystem.ts->export:src/xr/HandTrackingSystem.ts:12:HandTrackingSystem:exports",
+      "source": "file:src/xr/HandTrackingSystem.ts",
+      "target": "export:src/xr/HandTrackingSystem.ts:12:HandTrackingSystem",
+      "type": "exports"
+    },
+    {
+      "id": "module:src/xr/HandTrackingSystem.ts->export:src/xr/HandTrackingSystem.ts:35:createHandTrackingSystem:contains",
+      "source": "module:src/xr/HandTrackingSystem.ts",
+      "target": "export:src/xr/HandTrackingSystem.ts:35:createHandTrackingSystem",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/xr/HandTrackingSystem.ts->export:src/xr/HandTrackingSystem.ts:35:createHandTrackingSystem:exports",
+      "source": "file:src/xr/HandTrackingSystem.ts",
+      "target": "export:src/xr/HandTrackingSystem.ts:35:createHandTrackingSystem",
+      "type": "exports"
+    },
+    {
+      "id": "module:src/xr/HandTrackingSystem.ts->export:src/xr/HandTrackingSystem.ts:39:normalizeHandPose:contains",
+      "source": "module:src/xr/HandTrackingSystem.ts",
+      "target": "export:src/xr/HandTrackingSystem.ts:39:normalizeHandPose",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/xr/HandTrackingSystem.ts->export:src/xr/HandTrackingSystem.ts:39:normalizeHandPose:exports",
+      "source": "file:src/xr/HandTrackingSystem.ts",
+      "target": "export:src/xr/HandTrackingSystem.ts:39:normalizeHandPose",
+      "type": "exports"
+    },
+    {
+      "id": "module:src/xr/HandTrackingSystem.ts->export:src/xr/HandTrackingSystem.ts:47:classifyGesture:contains",
+      "source": "module:src/xr/HandTrackingSystem.ts",
+      "target": "export:src/xr/HandTrackingSystem.ts:47:classifyGesture",
+      "type": "contains"
+    },
+    {
+      "id": "file:src/xr/HandTrackingSystem.ts->export:src/xr/HandTrackingSystem.ts:47:classifyGesture:exports",
+      "source": "file:src/xr/HandTrackingSystem.ts",
+      "target": "export:src/xr/HandTrackingSystem.ts:47:classifyGesture",
+      "type": "exports"
+    },
+    {
+      "id": "file:tests/SceneManager.test.ts->module:tests/SceneManager.test.ts:contains",
+      "source": "file:tests/SceneManager.test.ts",
+      "target": "module:tests/SceneManager.test.ts",
+      "type": "contains"
+    },
+    {
+      "id": "file:tests/SceneManager.test.ts->symbol:tests/SceneManager.test.ts#sceneManagerTestPlaceholder:defines",
+      "source": "file:tests/SceneManager.test.ts",
+      "target": "symbol:tests/SceneManager.test.ts#sceneManagerTestPlaceholder",
+      "type": "defines"
+    },
+    {
+      "id": "module:tests/SceneManager.test.ts->symbol:tests/SceneManager.test.ts#sceneManagerTestPlaceholder:contains",
+      "source": "module:tests/SceneManager.test.ts",
+      "target": "symbol:tests/SceneManager.test.ts#sceneManagerTestPlaceholder",
+      "type": "contains"
+    },
+    {
+      "id": "module:tests/SceneManager.test.ts->import:tests/SceneManager.test.ts:1:../src/SceneManager:contains",
+      "source": "module:tests/SceneManager.test.ts",
+      "target": "import:tests/SceneManager.test.ts:1:../src/SceneManager",
+      "type": "contains"
+    },
+    {
+      "id": "file:tests/SceneManager.test.ts->file:src/SceneManager.ts:imports:1",
+      "source": "file:tests/SceneManager.test.ts",
+      "target": "file:src/SceneManager.ts",
+      "type": "imports",
+      "line": 1,
+      "importedNames": [
+        "SceneManager",
+        "createSceneConfig"
+      ],
+      "weight": 1
+    },
+    {
+      "id": "import:tests/SceneManager.test.ts:1:../src/SceneManager->file:src/SceneManager.ts:depends_on:1",
+      "source": "import:tests/SceneManager.test.ts:1:../src/SceneManager",
+      "target": "file:src/SceneManager.ts",
+      "type": "depends_on",
+      "line": 1,
+      "importedNames": [
+        "SceneManager",
+        "createSceneConfig"
+      ],
+      "weight": 1
+    },
+    {
+      "id": "module:tests/SceneManager.test.ts->export:tests/SceneManager.test.ts:3:sceneManagerTestPlaceholder:contains",
+      "source": "module:tests/SceneManager.test.ts",
+      "target": "export:tests/SceneManager.test.ts:3:sceneManagerTestPlaceholder",
+      "type": "contains"
+    },
+    {
+      "id": "file:tests/SceneManager.test.ts->export:tests/SceneManager.test.ts:3:sceneManagerTestPlaceholder:exports",
+      "source": "file:tests/SceneManager.test.ts",
+      "target": "export:tests/SceneManager.test.ts:3:sceneManagerTestPlaceholder",
+      "type": "exports"
+    },
+    {
+      "id": "file:tests/VoiceCommandRouter.test.ts->module:tests/VoiceCommandRouter.test.ts:contains",
+      "source": "file:tests/VoiceCommandRouter.test.ts",
+      "target": "module:tests/VoiceCommandRouter.test.ts",
+      "type": "contains"
+    },
+    {
+      "id": "file:tests/VoiceCommandRouter.test.ts->symbol:tests/VoiceCommandRouter.test.ts#voiceRouterTestPlaceholder:defines",
+      "source": "file:tests/VoiceCommandRouter.test.ts",
+      "target": "symbol:tests/VoiceCommandRouter.test.ts#voiceRouterTestPlaceholder",
+      "type": "defines"
+    },
+    {
+      "id": "module:tests/VoiceCommandRouter.test.ts->symbol:tests/VoiceCommandRouter.test.ts#voiceRouterTestPlaceholder:contains",
+      "source": "module:tests/VoiceCommandRouter.test.ts",
+      "target": "symbol:tests/VoiceCommandRouter.test.ts#voiceRouterTestPlaceholder",
+      "type": "contains"
+    },
+    {
+      "id": "module:tests/VoiceCommandRouter.test.ts->import:tests/VoiceCommandRouter.test.ts:1:../src/agents/VoiceCommandRouter:contains",
+      "source": "module:tests/VoiceCommandRouter.test.ts",
+      "target": "import:tests/VoiceCommandRouter.test.ts:1:../src/agents/VoiceCommandRouter",
+      "type": "contains"
+    },
+    {
+      "id": "file:tests/VoiceCommandRouter.test.ts->file:src/agents/VoiceCommandRouter.ts:imports:1",
+      "source": "file:tests/VoiceCommandRouter.test.ts",
+      "target": "file:src/agents/VoiceCommandRouter.ts",
+      "type": "imports",
+      "line": 1,
+      "importedNames": [
+        "parseVoiceCommand"
+      ],
+      "weight": 1
+    },
+    {
+      "id": "import:tests/VoiceCommandRouter.test.ts:1:../src/agents/VoiceCommandRouter->file:src/agents/VoiceCommandRouter.ts:depends_on:1",
+      "source": "import:tests/VoiceCommandRouter.test.ts:1:../src/agents/VoiceCommandRouter",
+      "target": "file:src/agents/VoiceCommandRouter.ts",
+      "type": "depends_on",
+      "line": 1,
+      "importedNames": [
+        "parseVoiceCommand"
+      ],
+      "weight": 1
+    },
+    {
+      "id": "module:tests/VoiceCommandRouter.test.ts->export:tests/VoiceCommandRouter.test.ts:3:voiceRouterTestPlaceholder:contains",
+      "source": "module:tests/VoiceCommandRouter.test.ts",
+      "target": "export:tests/VoiceCommandRouter.test.ts:3:voiceRouterTestPlaceholder",
+      "type": "contains"
+    },
+    {
+      "id": "file:tests/VoiceCommandRouter.test.ts->export:tests/VoiceCommandRouter.test.ts:3:voiceRouterTestPlaceholder:exports",
+      "source": "file:tests/VoiceCommandRouter.test.ts",
+      "target": "export:tests/VoiceCommandRouter.test.ts:3:voiceRouterTestPlaceholder",
+      "type": "exports"
+    },
+    {
+      "id": "symbol:src/agents/VoiceCommandRouter.ts#parseVoiceCommand->symbol:src/agents/VoiceCommandRouter.ts#normalizeTranscript:calls",
+      "source": "symbol:src/agents/VoiceCommandRouter.ts#parseVoiceCommand",
+      "target": "symbol:src/agents/VoiceCommandRouter.ts#normalizeTranscript",
+      "type": "calls"
+    },
+    {
+      "id": "symbol:src/App.tsx#App->package:react:references",
+      "source": "symbol:src/App.tsx#App",
+      "target": "package:react",
+      "type": "references"
+    },
+    {
+      "id": "symbol:src/App.tsx#App->file:src/SceneManager.ts:references",
+      "source": "symbol:src/App.tsx#App",
+      "target": "file:src/SceneManager.ts",
+      "type": "references"
+    },
+    {
+      "id": "symbol:src/App.tsx#App->file:src/agents/VoiceCommandRouter.ts:references",
+      "source": "symbol:src/App.tsx#App",
+      "target": "file:src/agents/VoiceCommandRouter.ts",
+      "type": "references"
+    },
+    {
+      "id": "symbol:src/App.tsx#initializeCockpit->file:src/agents/VoiceCommandRouter.ts:references",
+      "source": "symbol:src/App.tsx#initializeCockpit",
+      "target": "file:src/agents/VoiceCommandRouter.ts",
+      "type": "references"
+    },
+    {
+      "id": "symbol:src/App.tsx#initializeCockpit->file:src/utils/codeGraph.ts:references",
+      "source": "symbol:src/App.tsx#initializeCockpit",
+      "target": "file:src/utils/codeGraph.ts",
+      "type": "references"
+    },
+    {
+      "id": "symbol:src/App.tsx#createRefactorTask->file:src/agents/AgentTaskBuilder.ts:references",
+      "source": "symbol:src/App.tsx#createRefactorTask",
+      "target": "file:src/agents/AgentTaskBuilder.ts",
+      "type": "references"
+    },
+    {
+      "id": "symbol:src/App.tsx#createRefactorTask->symbol:src/App.tsx#initializeCockpit:calls",
+      "source": "symbol:src/App.tsx#createRefactorTask",
+      "target": "symbol:src/App.tsx#initializeCockpit",
+      "type": "calls"
+    },
+    {
+      "id": "symbol:src/SceneManager.ts#SceneManager->symbol:src/SceneManager.ts#SceneManager.initializeScene:calls",
+      "source": "symbol:src/SceneManager.ts#SceneManager",
+      "target": "symbol:src/SceneManager.ts#SceneManager.initializeScene",
+      "type": "calls"
+    },
+    {
+      "id": "symbol:src/SceneManager.ts#SceneManager->symbol:src/SceneManager.ts#SceneManager.initRenderer:calls",
+      "source": "symbol:src/SceneManager.ts#SceneManager",
+      "target": "symbol:src/SceneManager.ts#SceneManager.initRenderer",
+      "type": "calls"
+    },
+    {
+      "id": "symbol:src/SceneManager.ts#SceneManager->symbol:src/SceneManager.ts#SceneManager.loadAssets:calls",
+      "source": "symbol:src/SceneManager.ts#SceneManager",
+      "target": "symbol:src/SceneManager.ts#SceneManager.loadAssets",
+      "type": "calls"
+    },
+    {
+      "id": "symbol:src/SceneManager.ts#SceneManager->file:src/utils/codeGraph.ts:references",
+      "source": "symbol:src/SceneManager.ts#SceneManager",
+      "target": "file:src/utils/codeGraph.ts",
+      "type": "references"
+    },
+    {
+      "id": "symbol:src/SceneManager.ts#SceneManager->symbol:src/SceneManager.ts#SceneManager.setupHandTracking:calls",
+      "source": "symbol:src/SceneManager.ts#SceneManager",
+      "target": "symbol:src/SceneManager.ts#SceneManager.setupHandTracking",
+      "type": "calls"
+    },
+    {
+      "id": "symbol:src/SceneManager.ts#SceneManager->file:src/xr/HandTrackingSystem.ts:references",
+      "source": "symbol:src/SceneManager.ts#SceneManager",
+      "target": "file:src/xr/HandTrackingSystem.ts",
+      "type": "references"
+    },
+    {
+      "id": "symbol:src/utils/codeGraph.ts#buildCodeGraph->symbol:src/utils/codeGraph.ts#analyzeImports:calls",
+      "source": "symbol:src/utils/codeGraph.ts#buildCodeGraph",
+      "target": "symbol:src/utils/codeGraph.ts#analyzeImports",
+      "type": "calls"
+    },
+    {
+      "id": "symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem->symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem.start:calls",
+      "source": "symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem",
+      "target": "symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem.start",
+      "type": "calls"
+    },
+    {
+      "id": "symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem->symbol:src/xr/HandTrackingSystem.ts#normalizeHandPose:calls",
+      "source": "symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem",
+      "target": "symbol:src/xr/HandTrackingSystem.ts#normalizeHandPose",
+      "type": "calls"
+    },
+    {
+      "id": "symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem->symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem.classifyPose:calls",
+      "source": "symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem",
+      "target": "symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem.classifyPose",
+      "type": "calls"
+    },
+    {
+      "id": "symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem->symbol:src/xr/HandTrackingSystem.ts#classifyGesture:calls",
+      "source": "symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem",
+      "target": "symbol:src/xr/HandTrackingSystem.ts#classifyGesture",
+      "type": "calls"
+    },
+    {
+      "id": "symbol:src/xr/HandTrackingSystem.ts#createHandTrackingSystem->symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem:calls",
+      "source": "symbol:src/xr/HandTrackingSystem.ts#createHandTrackingSystem",
+      "target": "symbol:src/xr/HandTrackingSystem.ts#HandTrackingSystem",
+      "type": "calls"
+    },
+    {
+      "id": "symbol:tests/SceneManager.test.ts#sceneManagerTestPlaceholder->file:src/SceneManager.ts:references",
+      "source": "symbol:tests/SceneManager.test.ts#sceneManagerTestPlaceholder",
+      "target": "file:src/SceneManager.ts",
+      "type": "references"
+    },
+    {
+      "id": "symbol:tests/VoiceCommandRouter.test.ts#voiceRouterTestPlaceholder->file:src/agents/VoiceCommandRouter.ts:references",
+      "source": "symbol:tests/VoiceCommandRouter.test.ts#voiceRouterTestPlaceholder",
+      "target": "file:src/agents/VoiceCommandRouter.ts",
+      "type": "references"
+    },
+    {
+      "id": "repository:demo-repo->script:test:contains",
+      "source": "repository:demo-repo",
+      "target": "script:test",
+      "type": "contains"
+    },
+    {
+      "id": "repository:demo-repo->script:lint:contains",
+      "source": "repository:demo-repo",
+      "target": "script:lint",
+      "type": "contains"
+    },
+    {
+      "id": "file:tests/VoiceCommandRouter.test.ts->file:src/agents/VoiceCommandRouter.ts:tests",
+      "source": "file:tests/VoiceCommandRouter.test.ts",
+      "target": "file:src/agents/VoiceCommandRouter.ts",
+      "type": "tests"
+    },
+    {
+      "id": "file:tests/SceneManager.test.ts->file:src/SceneManager.ts:tests",
+      "source": "file:tests/SceneManager.test.ts",
+      "target": "file:src/SceneManager.ts",
+      "type": "tests"
+    }
+  ],
+  "stats": {
+    "folders": 5,
+    "files": 10,
+    "symbols": 34,
+    "imports": 10,
+    "nodeCount": 96,
+    "edgeCount": 204,
+    "fileCount": 10,
+    "symbolCount": 34,
+    "testCount": 2
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "llm": {
+    "provider": "ollama",
+    "modelName": "qwen3-coder",
+    "baseURL": "http://localhost:11434",
+    "temperature": 0.2,
+    "maxTokens": 4096
+  },
+  "agent": {
+    "command": "codex",
+    "args": ["exec", "--input", "{taskFile}"],
+    "workingDirectory": "."
+  }
+}
