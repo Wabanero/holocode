@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/assets/holocode-logo.png" alt="HoloCode logo" width="720">
+</p>
+
 # HoloCode Cockpit
 
 HoloCode Cockpit is a browser-first MVP for a VR-native programming environment. The app has been converted from a mostly flat dashboard into a 3D spatial code world: folders are districts, files are physical objects, functions orbit their parent files, imports become beams, external packages live in an outer ring, tests form a separate constellation, and agent/diff/error surfaces are spatial objects.
