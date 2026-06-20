@@ -6,6 +6,14 @@ The real keyboard remains the precision tool for editing. Monaco is preserved in
 
 The current loop is real file IO plus real git diff reading plus TypeScript language intelligence and debugger foundations: opening a 3D file node reads from disk, saving Monaco writes to disk, the 3D Diff Stack is generated from the repository's git state, diagnostics from the demo repo are projected into the 3D scene, and Debug Mode can model breakpoints, stack frames, variables, watches, and debug logs.
 
+## Interface Snapshots
+
+![HoloCode Cockpit view](docs/screenshots/holocode-cockpit.png)
+
+![HoloCode architecture view](docs/screenshots/holocode-architecture.png)
+
+![HoloCode agent workflow view](docs/screenshots/holocode-agent-workflow.png)
+
 ## Install
 
 ```bash
