@@ -468,3 +468,15 @@ The internal CodeGraphProvider extracts repository, directory, file, module, imp
 - Add richer local agent profiles and task templates around `.agent_tasks`.
 - Stream real test/lint process output.
 - Render runtime stack traces from real logs instead of mocked routes.
+
+## License
+
+This project is **source-available**, but it is **not open source**.
+
+Copyright © 2026 Filippo Bergeretti. All rights reserved.
+
+The code, documentation, architecture, interface concepts, visual assets, screenshots, logos, agent-orchestration logic, code-graph concepts, and VR/spatial programming designs are publicly visible for evaluation and portfolio-review purposes only.
+
+You may not copy, modify, redistribute, repackage, publish, sublicense, use commercially, or create derivative works from this project without explicit written permission.
+
+See [`LICENSE`](./LICENSE) for the full terms.
